@@ -2,11 +2,12 @@ import numpy as np
 import pandas as pd
 import sys
 from glob import glob
-from mne import find_events, Epochs
-from mne import create_info, concatenate_raws, pick_types
+from mne import find_events, Epochs, create_info, concatenate_raws, pick_types, compute_raw_covariance
 from mne.channels import read_montage
 from mne.io import RawArray
 
+WINDOW = 500
+NFILTERS = 3
 
 def getChannelNames():
     """Return Channels names."""
@@ -19,6 +20,28 @@ def getEventNames():
     """Return Event name."""
     return ['HandStart', 'FirstDigitTouch', 'BothStartLoadPhase', 'LiftOff',
             'Replace', 'BothReleased']
+
+def get_epochs_and_cov(raw_data, window=500):
+    picks = range(len(getChannelNames()))
+    events = list()
+    events_id = dict()
+
+    for j, eid in enumerate(getEventNames()):
+        tmp = find_events(raw_data, stim_channel=eid, verbose=False)
+        tmp[:, -1] = j + 1
+        events.append(tmp)
+        events_id[eid] = j + 1
+
+    events = np.concatenate(events, axis=0)
+    order_ev = np.argsort(events[:, 0])
+    events = events[order_ev]
+
+    epochs = Epochs(raw_data, events, events_id, 
+            tmin=-(window / 500.0) + 1 / 500.0 + 0.150, 
+            tmax=0.150, proj=False, picks=picks, baseline=None, 
+            preload=True, add_eeg_ref=False, verbose=False) 
+
+    cov_signal = compute_raw_covariance(draw_data, verbose=False)
 
 
 def creat_mne_raw_object(fname, read_events = True):
@@ -57,7 +80,7 @@ if __name__ == '__main__':
 
         fnames = glob('data/train/subj%d_series*_data.csv' % (subject))
         fnames.sort()
-        print fnames
+        #print fnames
 
         fnames_train = fnames[:-2]
         fnames_validation = fnames[-2:]
@@ -65,15 +88,15 @@ if __name__ == '__main__':
         fnames_test = glob('data/test/subj%d_series*_data.csv' % (subject))
         fnames_test.sort()
 
-        print fnames_validation
+        #print fnames_validation
 
         raw_train = concatenate_raws([creat_mne_raw_object(fname, read_events=True) for fname in fnames_train])
         raw_val = concatenate_raws([creat_mne_raw_object(fname, read_events=True) for fname in fnames_validation])
-        raw_test = concatenate_raws([creat_mne_raw_object(fname, read_events=False) for fname in fnames_test])
+        #raw_test = concatenate_raws([creat_mne_raw_object(fname, read_events=False) for fname in fnames_test])
 
         picks_train = pick_types(raw_train.info, eeg=True)
         picks_val = pick_types(raw_val.info, eeg=True)
-        picks_test = pick_types(raw_test.info, eeg=True)
+        #picks_test = pick_types(raw_test.info, eeg=True)
 
         data_train = raw_train._data[picks_train].T
         labels_train = raw_train._data[32:].T
@@ -81,7 +104,20 @@ if __name__ == '__main__':
         data_val = raw_val._data[picks_val].T
         labels_val = raw_val._data[32:].T
 
-        data_test = raw_test._data[picks_test].T
-        labels_test = None
+        #data_test = raw_test._data[picks_test].T
+        #labels_test = None
+        train_epochs, train_cov_signal = get_epochs_and_cov(raw_train, WINDOW)
+        xd = Xdawn(n_components=NFILTERS, signal_cov=train_cov_signal, correct_overlap=False)
+        xd.fit(train_epochs)
 
+        val_epochs, val_cov_signal = get_epochs_and_cov(raw_val, WINDOW)
+        xd = Xdawn(n_components=NFILTERS, signal_cov=val_cov_signal, correct_overlap=False)
+        xd.fit(val_epochs)
 
+        P = []
+        for eid in getEventNames():
+            P.append(np.dot(xd.filters_[eid][:, 0:NFILTERS].T, xd.evokeds_[eid].data))
+
+        print "Saving data for subject{0} in files".format(subject)
+        np.save('/data/processed/subj{0}_train'.format(subject), train_epochs._data)
+        np.save('/data/processed/subj{0}_val'.format(subject), train_epochs.events)
