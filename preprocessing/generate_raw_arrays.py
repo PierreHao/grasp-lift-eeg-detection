@@ -119,5 +119,5 @@ if __name__ == '__main__':
             P.append(np.dot(xd.filters_[eid][:, 0:NFILTERS].T, xd.evokeds_[eid].data))
 
         print "Saving data for subject{0} in files".format(subject)
-        np.save('/data/processed/subj{0}_train'.format(subject), train_epochs._data)
-        np.save('/data/processed/subj{0}_val'.format(subject), train_epochs.events)
+        np.save('/data/processed/subj{0}_train.npy'.format(subject), train_epochs._data)
+        np.save('/data/processed/subj{0}_val.npy'.format(subject), train_epochs.events)
