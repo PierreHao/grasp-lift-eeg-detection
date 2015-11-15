@@ -5,6 +5,7 @@ from glob import glob
 from mne import find_events, Epochs, create_info, concatenate_raws, pick_types, compute_raw_covariance
 from mne.channels import read_montage
 from mne.io import RawArray
+from mne.preprocessing import Xdawn
 
 WINDOW = 500
 NFILTERS = 3
@@ -41,7 +42,8 @@ def get_epochs_and_cov(raw_data, window=500):
             tmax=0.150, proj=False, picks=picks, baseline=None, 
             preload=True, add_eeg_ref=False, verbose=False) 
 
-    cov_signal = compute_raw_covariance(draw_data, verbose=False)
+    cov_signal = compute_raw_covariance(raw_data, verbose=False)
+    return epochs, cov_signal
 
 
 def creat_mne_raw_object(fname, read_events = True):
@@ -119,5 +121,8 @@ if __name__ == '__main__':
             P.append(np.dot(xd.filters_[eid][:, 0:NFILTERS].T, xd.evokeds_[eid].data))
 
         print "Saving data for subject{0} in files".format(subject)
-        np.save('/data/processed/subj{0}_train.npy'.format(subject), train_epochs._data)
-        np.save('/data/processed/subj{0}_val.npy'.format(subject), train_epochs.events)
+        np.save('data/processed/subj{0}_train_data.npy'.format(subject), train_epochs._data)
+        np.save('data/processed/subj{0}_train_labels.npy'.format(subject), train_epochs.events)
+
+        np.save('data/processed/subj{0}_val_data.npy'.format(subject), val_epochs._data)
+        np.save('data/processed/subj{0}_val_labels.npy'.format(subject), val_epochs.events)
