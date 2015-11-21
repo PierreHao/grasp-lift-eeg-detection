@@ -3,3 +3,4 @@ raw-data
 data
 *.npy
 *.swp
+.ipynb_checkpoints
