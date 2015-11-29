@@ -1,0 +1,67 @@
+
+/home/mc3784/kmeans/venv2/lib/python2.7/site-packages/memory_profiler.py:85: UserWarning: psutil module not found. memory_profiler will be slow
+  warnings.warn("psutil module not found. memory_profiler will be slow")
+Starting script...
+comparison our online with our plusplus for nsamples, ncluster: [[2**8, 2**2],[2**10, 2**4],[2**12, 2**6],[2**14, 2**8],[2**16, 2**10],[2**18, 2**12],[2**20, 2**14]]
+09:59:45.907102 Running for 256 samples of dimension 32 and nCluster 4
+09:59:46.165427 (Online) Last iteration :  23 , inertia:  4.49454340737 , minInertia: 4.49454340737
+09:59:46.271267 (Online) Last iteration :  23 , inertia:  4.49454340737 , minInertia: 4.49454340737
+09:59:46.373558 (Online) Last iteration :  23 , inertia:  4.49454340737 , minInertia: 4.49454340737
+09:59:46.504114 (Online) Last iteration :  23 , inertia:  4.49454340737 , minInertia: 4.49454340737
+09:59:47.651370 (plusplus) Last iteration:  12  inertia:  2009.21438125  minInertia:  2009.21438125
+09:59:47.758010 (plusplus) Last iteration:  12  inertia:  1396.34255621  minInertia:  1396.34255621
+09:59:47.869166 (plusplus) Last iteration:  13  inertia:  2119.88408446  minInertia:  2119.88408446
+09:59:48.008558 (plusplus) Last iteration:  14  inertia:  2202.67251261  minInertia:  2202.67251261
+09:59:48.113704 (plusplus) Last iteration:  12  inertia:  1396.34255621  minInertia:  1396.34255621
+09:59:48.319501 (plusplus) Last iteration:  12  inertia:  2165.02208462  minInertia:  2165.02208462
+09:59:48.444293 (plusplus) Last iteration:  13  inertia:  2082.74255349  minInertia:  2082.74255349
+09:59:48.531244 Running for 1024 samples of dimension 32 and nCluster 16
+09:59:48.599368 (Online) Last iteration :  15 , inertia:  4.5807563892 , minInertia: 4.58075637151
+09:59:48.725321 (Online) Last iteration :  15 , inertia:  4.5807563892 , minInertia: 4.58075637151
+09:59:48.827043 (Online) Last iteration :  15 , inertia:  4.5807563892 , minInertia: 4.58075637151
+09:59:48.943338 (Online) Last iteration :  15 , inertia:  4.5807563892 , minInertia: 4.58075637151
+09:59:49.043977 (Online) Last iteration :  15 , inertia:  9.20274305829 , minInertia: 9.20274304059
+09:59:49.159249 (Online) Last iteration :  15 , inertia:  4.5807563892 , minInertia: 4.58075637151
+09:59:49.273884 (Online) Last iteration :  15 , inertia:  4.5807563892 , minInertia: 4.58075637151
+09:59:49.396204 (plusplus) Last iteration:  17  inertia:  8006.25516241  minInertia:  8006.25516241
+09:59:49.509130 (plusplus) Last iteration:  12  inertia:  5705.64094755  minInertia:  5705.64094755
+09:59:49.634532 (plusplus) Last iteration:  12  inertia:  5705.64094755  minInertia:  5705.64094755
+09:59:49.775673 (plusplus) Last iteration:  12  inertia:  5705.64094755  minInertia:  5705.64094755
+09:59:49.932127 (plusplus) Last iteration:  17  inertia:  8008.51571832  minInertia:  8008.51571832
+09:59:50.057991 (plusplus) Last iteration:  12  inertia:  5705.64094755  minInertia:  5705.64094755
+09:59:50.173127 (plusplus) Last iteration:  12  inertia:  5705.64094755  minInertia:  5705.64094755
+09:59:50.243228 Running for 4096 samples of dimension 32 and nCluster 64
+09:59:50.348268 (Online) Last iteration :  16 , inertia:  7.51596182537 , minInertia: 7.51596182537
+09:59:50.463600 (Online) Last iteration :  16 , inertia:  6.79704670399 , minInertia: 6.79704670399
+09:59:50.627505 (Online) Last iteration :  13 , inertia:  4.50201748359 , minInertia: 4.50201748359
+09:59:50.799269 (Online) Last iteration :  13 , inertia:  4.50201748359 , minInertia: 4.50201748359
+09:59:51.470981 (Online) Last iteration :  318 , inertia:  4.50196939611 , minInertia: 4.50196932808
+09:59:51.641423 (plusplus) Last iteration:  25  inertia:  35590.4007249  minInertia:  35590.4007249
+09:59:51.789682 (plusplus) Last iteration:  12  inertia:  22966.7272054  minInertia:  22966.7272054
+09:59:51.969529 (plusplus) Last iteration:  25  inertia:  34044.4199489  minInertia:  34044.4199489
+09:59:52.015440 Running for 16384 samples of dimension 32 and nCluster 256
+09:59:52.228690 (Online) Last iteration :  13 , inertia:  6.35422168903 , minInertia: 6.35422167458
+09:59:52.478177 (Online) Last iteration :  23 , inertia:  4.56949577521 , minInertia: 4.56949577521
+09:59:52.784967 (plusplus) Last iteration:  12  inertia:  92038.2280911  minInertia:  92038.2280911
+09:59:53.042439 (plusplus) Last iteration:  12  inertia:  92038.2280911  minInertia:  92038.2280911
+09:59:53.132764 Running for 65536 samples of dimension 32 and nCluster 1024
+09:59:53.900796 (Online) Last iteration :  23 , inertia:  5.87770525556 , minInertia: 5.87770524111
+10:00:04.447313 (plusplus) Last iteration:  229  inertia:  581441.283609  minInertia:  581441.283609
+10:00:04.487154 Running for 262144 samples of dimension 32 and nCluster 4096
+10:00:06.760373 (Online) Last iteration :  14 , inertia:  6.77027819165 , minInertia: 6.77027819165
+10:00:10.243119 (plusplus) Last iteration:  12  inertia:  1470765.37576  minInertia:  1470765.37576
+10:00:10.316553 Running for 1048576 samples of dimension 32 and nCluster 16384
+10:00:19.087392 (Online) Last iteration :  14 , inertia:  4.77684891588 , minInertia: 4.77684890143
+10:00:32.984475 (plusplus) Last iteration:  12  inertia:  5885994.63388  minInertia:  5885994.63388
+Script ended. Results:
+numSamples:  [2, 4, 6, 8, 10, 12, 14]
+onlineMemory:  843.1484375
+onlineTimesList:  [1.6977589130401611, 0.7913641929626465, 1.2578768730163574, 0.4642190933227539, 0.5974791049957275, 1.5270349979400635, 5.776418924331665]
+ppMemoriesList:  [81.99609375, 83.83203125, 95.70703125, 111.53125, 190.734375, 403.01171875, 1410.00390625]
+ppTimesList:  [0.9249448776245117, 0.9162759780883789, 0.5007140636444092, 0.6008310317993164, 10.540748119354248, 3.525707960128784, 13.88590121269226]
+
+
+
+
+
+
