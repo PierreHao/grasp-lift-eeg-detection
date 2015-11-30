@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.4)  29 NOV 2015 23:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.1.4)  29 NOV 2015 23:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -483,35 +483,35 @@ e
 File: memory_FirstVersion.png Graphic file (type png)
 
 <use memory_FirstVersion.png>
-Package pdftex.def Info: memory_FirstVersion.png used on input line 16.
+Package pdftex.def Info: memory_FirstVersion.png used on input line 17.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
 <time_FirstVersion.png, id=6, 578.16pt x 433.62pt>
 File: time_FirstVersion.png Graphic file (type png)
  <use time_FirstVersion.png>
-Package pdftex.def Info: time_FirstVersion.png used on input line 17.
+Package pdftex.def Info: time_FirstVersion.png used on input line 18.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
 <memory_SecondVersion.png, id=7, 578.16pt x 433.62pt>
 File: memory_SecondVersion.png Graphic file (type png)
 
 <use memory_SecondVersion.png>
-Package pdftex.def Info: memory_SecondVersion.png used on input line 18.
+Package pdftex.def Info: memory_SecondVersion.png used on input line 19.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
 <time_secondVersion.png, id=8, 578.16pt x 433.62pt>
 File: time_secondVersion.png Graphic file (type png)
 
 <use time_secondVersion.png>
-Package pdftex.def Info: time_secondVersion.png used on input line 19.
+Package pdftex.def Info: time_secondVersion.png used on input line 20.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
-Overfull \hbox (75.13089pt too wide) in paragraph at lines 16--20
+Overfull \hbox (75.13089pt too wide) in paragraph at lines 17--21
 [][] []
  []
 
 
-Overfull \hbox (75.13089pt too wide) in paragraph at lines 16--20
+Overfull \hbox (75.13089pt too wide) in paragraph at lines 17--21
 [] [] 
  []
 
@@ -523,16 +523,16 @@ n.png> <./time_secondVersion.png>]
 <memoryComparison.png, id=23, 578.16pt x 433.62pt>
 File: memoryComparison.png Graphic file (type png)
  <use memoryComparison.png>
-Package pdftex.def Info: memoryComparison.png used on input line 30.
+Package pdftex.def Info: memoryComparison.png used on input line 31.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
 <timeComparison.png, id=24, 578.16pt x 433.62pt>
 File: timeComparison.png Graphic file (type png)
  <use timeComparison.png>
-Package pdftex.def Info: timeComparison.png used on input line 31.
+Package pdftex.def Info: timeComparison.png used on input line 32.
 (pdftex.def)             Requested size: 231.2599pt x 173.44492pt.
 
-Overfull \hbox (75.13089pt too wide) in paragraph at lines 30--32
+Overfull \hbox (75.13089pt too wide) in paragraph at lines 31--33
 [][] [] 
  []
 
@@ -540,15 +540,15 @@ Overfull \hbox (75.13089pt too wide) in paragraph at lines 30--32
 Here is how much of TeX's memory you used:
  11851 strings out of 493117
  237357 string characters out of 6135434
- 270915 words of memory out of 5000000
+ 271915 words of memory out of 5000000
  15102 multiletter control sequences out of 15000+600000
  4544 words of font info for 17 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,7n,54p,461b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,7n,54p,462b,225s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local
 /texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
 texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb>
-Output written on Kmeans.pdf (3 pages, 134988 bytes).
+Output written on Kmeans.pdf (3 pages, 132443 bytes).
 PDF statistics:
  38 PDF objects out of 1000 (max. 8388607)
  18 compressed objects within 1 object stream
