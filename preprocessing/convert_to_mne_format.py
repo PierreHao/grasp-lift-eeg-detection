@@ -12,11 +12,11 @@ def create_mne_raw_object(fname, read_events=True):
     """Create a mne raw instance from csv file."""
     # Read EEG file
     data = pd.read_csv(fname)
-    print fname, data.shape
+    print (fname, data.shape)
 
     # get chanel names
     ch_names = list(data.columns[1:])
-    print ch_names
+    print (ch_names)
 
     # read EEG standard montage from mne
     montage = read_montage('standard_1005', ch_names)

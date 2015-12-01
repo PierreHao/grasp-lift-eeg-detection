@@ -48,7 +48,7 @@ def get_epochs_and_cov(raw_data, window=500):
 
 def creat_mne_raw_object(fname, read_events = True):
 
-    print "loading data from %s" %fname
+    print ("loading data from %s" %fname)
     data = pd.read_csv(fname)
 
     ch_names = list(data.columns[1:])
@@ -59,7 +59,7 @@ def creat_mne_raw_object(fname, read_events = True):
     
     if read_events:
         ev_fname = fname.replace('_data', '_events')
-        print ev_fname
+        print (ev_fname)
         events = pd.read_csv(ev_fname)
         events_names = events.columns[1:]
         events_data = np.array(events[events_names]).T
@@ -78,7 +78,7 @@ if __name__ == '__main__':
     subjects = range(1,13)
 
     for subject in subjects:
-        print "Loading data for subject %d... " % subject
+        print ("Loading data for subject %d... " % subject)
 
         fnames = glob('data/train/subj%d_series*_data.csv' % (subject))
         fnames.sort()
@@ -120,7 +120,7 @@ if __name__ == '__main__':
         for eid in getEventNames():
             P.append(np.dot(xd.filters_[eid][:, 0:NFILTERS].T, xd.evokeds_[eid].data))
 
-        print "Saving data for subject{0} in files".format(subject)
+        print ("Saving data for subject{0} in files".format(subject))
         np.save('data/processed/subj{0}_train_data.npy'.format(subject), train_epochs._data)
         np.save('data/processed/subj{0}_train_labels.npy'.format(subject), train_epochs.events)
 
