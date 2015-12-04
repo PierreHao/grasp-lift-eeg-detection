@@ -22,8 +22,7 @@ def getEventNames():
     return ['HandStart', 'FirstDigitTouch', 'BothStartLoadPhase', 'LiftOff',
             'Replace', 'BothReleased']
 
-def get_epochs_and_cov(raw_data, window=500):
-    picks = range(len(getChannelNames()))
+def get_epochs_and_cov(raw_data, picks, window=500):
     events = list()
     events_id = dict()
 
@@ -108,11 +107,11 @@ if __name__ == '__main__':
 
         #data_test = raw_test._data[picks_test].T
         #labels_test = None
-        train_epochs, train_cov_signal = get_epochs_and_cov(raw_train, WINDOW)
+        train_epochs, train_cov_signal = get_epochs_and_cov(raw_train, picks_train, WINDOW)
         xd = Xdawn(n_components=NFILTERS, signal_cov=train_cov_signal, correct_overlap=False)
         xd.fit(train_epochs)
 
-        val_epochs, val_cov_signal = get_epochs_and_cov(raw_val, WINDOW)
+        val_epochs, val_cov_signal = get_epochs_and_cov(raw_val, picks_val, WINDOW)
         xd = Xdawn(n_components=NFILTERS, signal_cov=val_cov_signal, correct_overlap=False)
         xd.fit(val_epochs)
 
