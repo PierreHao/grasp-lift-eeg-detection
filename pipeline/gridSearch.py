@@ -12,6 +12,7 @@ from sklearn import svm
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.svm import LinearSVC
 
+from sklearn.grid_search import GridSearchCV
 
 #Load and scale data. just for one file. Write the for loop for all file 
 X = np.load("../data/processed/subj1_train_data.npy")
@@ -32,19 +33,27 @@ X_test = np.mean(X_test,axis=2)
 
 
 #Use one of the two following version (commenting the other)
-classifier = LinearSVC(C=1.0,random_state=0)
-predictions = classifier.fit(X, y).predict(X_test)
+svc = LinearSVC(C=1.0,random_state=0)
 
-y_binary = label_binarize(y_test,classes=[1,2,3,4,5,6])
-predictions_binary=label_binarize(predictions,classes=[1,2,3,4,5,6])
+pipeline = Pipeline([("svc", svc)])
+param_grid = dict(svc__C=[0.1, 1, 10,100,1000])
+grid_search = GridSearchCV(pipeline, param_grid=param_grid, verbose=10)
+grid_search.fit(X, y)
+print(grid_search.best_estimator_)
 
-aucTotal = 0
-for i in range(0,6):
-	singleAuc=roc_auc_score(y_binary[:,i],predictions_binary[:,i])
-	aucTotal+=singleAuc
-	print "for label",i,"auc=",singleAuc	
 
-print y [1:50]
-print predictions[1:50] 
-print aucTotal/6
+#predictions = classifier.fit(X, y).predict(X_test)
+
+#y_binary = label_binarize(y_test,classes=[1,2,3,4,5,6])
+#predictions_binary=label_binarize(predictions,classes=[1,2,3,4,5,6])
+
+#aucTotal = 0
+#for i in range(0,6):
+#	singleAuc=roc_auc_score(y_binary[:,i],predictions_binary[:,i])
+#	aucTotal+=singleAuc
+#	print "for label",i,"auc=",singleAuc	
+#
+#print y [1:50]
+#print predictions[1:50] 
+#print aucTotal/6
 
