@@ -35,6 +35,6 @@ predictions = classifier.fit(X, y).predict(X)
 
 y_score = classifier.fit(X, y).decision_function(X)
 
-print y [1:50]
-print predictions[1:50] 
-print y_score
+print(y [1:50])
+print(predictions[1:50])
+print( y_score)
