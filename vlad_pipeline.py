@@ -71,16 +71,24 @@ subject  = 1
 
 X = np.load("{0}/subj{1}_train_data.npy".format(DATA_DIR, subject))
 y = np.load("{0}/subj{1}_train_labels.npy".format(DATA_DIR, subject))
+X_test = np.load("{0}/subj{1}_val_data.npy".format(DATA_DIR, subject))
+y_test = np.load("{0}/subj{1}_val_labels.npy".format(DATA_DIR, subject))
 y = y[:, 2]
+y_test = y_test[:,2]
 
 print(X.shape, y.shape)
+print(X_test.shape, y_test.shape)
 
 clf = svm.SVC(kernel='linear')
 myVlad = Vlad()
 
 vlad_pipeline = Pipeline([('myown', myVlad), ('svm', clf)])
-#vlad_pipeline.predict(X)
 
-num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
+#num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
+num_clusters = [2**3]
 estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters))
 estimator.fit(X,y)
+estimator.predict(X_test)
+
+score = estimator.score(X_test, y_test)
+print(score)
