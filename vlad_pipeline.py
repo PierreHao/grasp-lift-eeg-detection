@@ -8,7 +8,9 @@ from sklearn.grid_search import GridSearchCV
 from sklearn.externals import six
 from sklearn.cluster import KMeans
 from sklearn.metrics.pairwise import pairwise_distances
-
+from sklearn.preprocessing import label_binarize
+from sklearn.metrics import roc_auc_score
+from sklearn.decomposition import PCA
 
 class Vlad:
     def __init__(self, num_clusters = 8):
@@ -61,18 +63,22 @@ class Vlad:
         out = np.empty((tot_range, self.centers.shape[0]*X.shape[2]))
         for i in range(tot_range):
             out[i] = self.my_vlad(X[i], self.centers)
+
+        out = np.insert(out, 0, 1, axis=1)
         print(out.shape)
         return out
 
 
 DATA_DIR = "data/processed/"
 
-subject  = 1
+subjects = range(1, 13)
 
-X = np.load("{0}/subj{1}_train_data.npy".format(DATA_DIR, subject))
-y = np.load("{0}/subj{1}_train_labels.npy".format(DATA_DIR, subject))
-X_test = np.load("{0}/subj{1}_val_data.npy".format(DATA_DIR, subject))
-y_test = np.load("{0}/subj{1}_val_labels.npy".format(DATA_DIR, subject))
+X =  np.concatenate([np.load("{0}/subj{1}_train_data.npy".format(DATA_DIR, subject)) for subject in subjects])
+y =  np.concatenate([np.load("{0}/subj{1}_train_labels.npy".format(DATA_DIR, subject)) for subject in subjects])
+
+X_test =  np.concatenate([np.load("{0}/subj{1}_val_data.npy".format(DATA_DIR, subject)) for subject in subjects])
+y_test =  np.concatenate([np.load("{0}/subj{1}_val_labels.npy".format(DATA_DIR, subject)) for subject in subjects])
+
 y = y[:, 2]
 y_test = y_test[:,2]
 
@@ -81,8 +87,9 @@ print(X_test.shape, y_test.shape)
 
 clf = svm.SVC(kernel='linear')
 myVlad = Vlad()
+pca = PCA(n_components=0.9)
 
-vlad_pipeline = Pipeline([('myown', myVlad), ('svm', clf)])
+vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('svm', clf)])
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
 num_clusters = [2**3]
@@ -91,4 +98,17 @@ estimator.fit(X,y)
 estimator.predict(X_test)
 
 score = estimator.score(X_test, y_test)
+predictions = estimator.predict(X_test)
+
 print(score)
+
+y_binary = label_binarize(y_test,classes=[1,2,3,4,5,6])
+predictions_binary=label_binarize(predictions,classes=[1,2,3,4,5,6])
+
+aucTotal = 0
+for i in range(0,6):
+	singleAuc=roc_auc_score(y_binary[:,i],predictions_binary[:,i])
+	aucTotal+=singleAuc
+	print("for label",i,"auc=",singleAuc)
+
+print("ACU score ", aucTotal/6)

@@ -42,15 +42,8 @@ aucTotal = 0
 for i in range(0,6):
 	singleAuc=roc_auc_score(y_binary[:,i],predictions_binary[:,i])
 	aucTotal+=singleAuc
-	print "for label",i,"auc=",singleAuc	
+	print("for label",i,"auc=",singleAuc)
 
-<<<<<<< HEAD
 print(y [1:50])
 print(predictions[1:50])
-print( y_score)
-=======
-print y [1:50]
-print predictions[1:50] 
-print aucTotal/6
-
->>>>>>> bf75e692a4ebc921b51f968b81abbbea80d04aec
+print(aucTotal/6)
