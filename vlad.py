@@ -1,6 +1,6 @@
 import numpy as np
 import numpy.linalg as LA
-from sklearn.cluster import KMeans
+from sklearn.cluster import MiniBatchKMeans
 from sklearn.externals import six
 from sklearn.metrics.pairwise import pairwise_distances
 
@@ -9,12 +9,12 @@ class Vlad:
         self.num_clusters = num_clusters
         return
 
-    def my_vlad(self, local_descriptors, centroids):
+    def my_vlad(self, local_descriptors, centroids, clusters):
         #print(centroids.shape, local_descriptors.shape)
         V = np.zeros([centroids.shape[0],local_descriptors.shape[1]])
         #print(V.shape, centroids.shape, local_descriptors.shape)
-        distances = pairwise_distances(local_descriptors, centroids, metric='euclidean')
-        clusters = np.argmin(distances,axis=1)
+        #distances = pairwise_distances(local_descriptors, centroids, metric='euclidean')
+        #clusters = np.argmin(distances,axis=1)
         for iter, center in enumerate(centroids):
             points_belonging_to_cluster = local_descriptors[clusters == iter]
             V[iter] = np.sum(points_belonging_to_cluster - center, axis=0)
@@ -40,9 +40,10 @@ class Vlad:
         print("in fit method", X.shape, y.shape, self.num_clusters)
         tmp = X.swapaxes(1,2)
         tmp = tmp.reshape(tmp.shape[0]*tmp.shape[1], tmp.shape[2])
-        kmeans = KMeans(init='k-means++', n_clusters=self.num_clusters)
+        kmeans = MiniBatchKMeans(init='k-means++', n_clusters=self.num_clusters, batch_size=1000)
         kmeans.fit(tmp)
         self.centers = kmeans.cluster_centers_
+        self.labels = kmeans.labels_
         print("shape of centers is ",self.centers.shape)
         return self
 
@@ -53,7 +54,7 @@ class Vlad:
         print("X.shape is ", X.shape)
         out = np.empty((tot_range, self.centers.shape[0]*X.shape[2]))
         for i in range(tot_range):
-            out[i] = self.my_vlad(X[i], self.centers)
+            out[i] = self.my_vlad(X[i], self.centers, self.labels)
 
         out = np.insert(out, 0, 1, axis=1)
         print(out.shape)

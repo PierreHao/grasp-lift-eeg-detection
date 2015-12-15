@@ -1,1 +1,2 @@
+module load virtualenv/12.1.1
 module load scipy/intel/0.16.0

@@ -13,14 +13,15 @@ from sklearn.preprocessing import StandardScaler
 from vlad import Vlad
 
 DATA_DIR = "data/processed/"
+N_COMPONENT = "3"
 
-subjects = range(1, 3)
+subjects = range(1, 13)
 
-X =  np.concatenate([np.load("{0}/subj{1}_train_data.npy".format(DATA_DIR, subject)) for subject in subjects])
-y =  np.concatenate([np.load("{0}/subj{1}_train_labels.npy".format(DATA_DIR, subject)) for subject in subjects])
+X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
+y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 
-X_test =  np.concatenate([np.load("{0}/subj{1}_val_data.npy".format(DATA_DIR, subject)) for subject in subjects])
-y_test =  np.concatenate([np.load("{0}/subj{1}_val_labels.npy".format(DATA_DIR, subject)) for subject in subjects])
+X_test =  np.concatenate([np.load("{0}/{1}/subj{2}_val_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
+y_test =  np.concatenate([np.load("{0}/{1}/subj{2}_val_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 
 y = y[:, 2]
 y_test = y_test[:,2]
