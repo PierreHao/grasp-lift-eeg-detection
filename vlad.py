@@ -9,12 +9,12 @@ class Vlad:
         self.num_clusters = num_clusters
         return
 
-    def my_vlad(self, local_descriptors, centroids, clusters):
+    def my_vlad(self, local_descriptors, centroids):
         #print(centroids.shape, local_descriptors.shape)
         V = np.zeros([centroids.shape[0],local_descriptors.shape[1]])
-        #print(V.shape, centroids.shape, local_descriptors.shape)
-        #distances = pairwise_distances(local_descriptors, centroids, metric='euclidean')
-        #clusters = np.argmin(distances,axis=1)
+        print(V.shape, centroids.shape, local_descriptors.shape)
+        distances = pairwise_distances(local_descriptors, centroids, metric='euclidean')
+        clusters = np.argmin(distances,axis=1)
         for iter, center in enumerate(centroids):
             points_belonging_to_cluster = local_descriptors[clusters == iter]
             V[iter] = np.sum(points_belonging_to_cluster - center, axis=0)
@@ -54,7 +54,7 @@ class Vlad:
         print("X.shape is ", X.shape)
         out = np.empty((tot_range, self.centers.shape[0]*X.shape[2]))
         for i in range(tot_range):
-            out[i] = self.my_vlad(X[i], self.centers, self.labels)
+            out[i] = self.my_vlad(X[i], self.centers)
 
         out = np.insert(out, 0, 1, axis=1)
         print(out.shape)
