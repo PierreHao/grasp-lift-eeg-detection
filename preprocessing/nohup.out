@@ -1,0 +1,7 @@
+Loading data for subject 1... 
+Traceback (most recent call last):
+  File "generate_raw_arrays.py", line 95, in <module>
+    raw_train = concatenate_raws([creat_mne_raw_object(fname, read_events=True) for fname in fnames_train])
+  File "/home/mc3784/grasp-lift-eeg-detection/.venv/lib/python2.7/site-packages/mne/io/base.py", line 2184, in concatenate_raws
+    raws[0].append(raws[1:], preload)
+IndexError: list index out of range

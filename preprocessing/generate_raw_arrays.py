@@ -8,7 +8,8 @@ from mne.io import RawArray
 from mne.preprocessing import Xdawn
 
 WINDOW = 500
-NFILTERS = 3
+NFILTERS = 2
+#2,3,4
 
 def getChannelNames():
     """Return Channels names."""

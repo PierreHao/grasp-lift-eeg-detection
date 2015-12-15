@@ -1,0 +1,506 @@
+Loading data for subject 1... 
+loading data from data/train/subj1_series1_data.csv
+data/train/subj1_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=119496
+    Range : 0 ... 119495 =      0.000 ...   238.990 secs
+Ready.
+loading data from data/train/subj1_series2_data.csv
+data/train/subj1_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=271954
+    Range : 0 ... 271953 =      0.000 ...   543.906 secs
+Ready.
+loading data from data/train/subj1_series3_data.csv
+data/train/subj1_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=217614
+    Range : 0 ... 217613 =      0.000 ...   435.226 secs
+Ready.
+loading data from data/train/subj1_series4_data.csv
+data/train/subj1_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=116240
+    Range : 0 ... 116239 =      0.000 ...   232.478 secs
+Ready.
+loading data from data/train/subj1_series5_data.csv
+data/train/subj1_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=210644
+    Range : 0 ... 210643 =      0.000 ...   421.286 secs
+Ready.
+loading data from data/train/subj1_series6_data.csv
+data/train/subj1_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=249550
+    Range : 0 ... 249549 =      0.000 ...   499.098 secs
+Ready.
+loading data from data/train/subj1_series7_data.csv
+data/train/subj1_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=119561
+    Range : 0 ... 119560 =      0.000 ...   239.120 secs
+Ready.
+loading data from data/train/subj1_series8_data.csv
+data/train/subj1_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=117333
+    Range : 0 ... 117332 =      0.000 ...   234.664 secs
+Ready.
+Saving data for subject1 in files
+Loading data for subject 2... 
+loading data from data/train/subj2_series1_data.csv
+data/train/subj2_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=291874
+    Range : 0 ... 291873 =      0.000 ...   583.746 secs
+Ready.
+loading data from data/train/subj2_series2_data.csv
+data/train/subj2_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=330082
+    Range : 0 ... 330081 =      0.000 ...   660.162 secs
+Ready.
+loading data from data/train/subj2_series3_data.csv
+data/train/subj2_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=152745
+    Range : 0 ... 152744 =      0.000 ...   305.488 secs
+Ready.
+loading data from data/train/subj2_series4_data.csv
+data/train/subj2_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=278114
+    Range : 0 ... 278113 =      0.000 ...   556.226 secs
+Ready.
+loading data from data/train/subj2_series5_data.csv
+data/train/subj2_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=151647
+    Range : 0 ... 151646 =      0.000 ...   303.292 secs
+Ready.
+loading data from data/train/subj2_series6_data.csv
+data/train/subj2_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=206222
+    Range : 0 ... 206221 =      0.000 ...   412.442 secs
+Ready.
+loading data from data/train/subj2_series7_data.csv
+data/train/subj2_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=150865
+    Range : 0 ... 150864 =      0.000 ...   301.728 secs
+Ready.
+loading data from data/train/subj2_series8_data.csv
+data/train/subj2_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=149945
+    Range : 0 ... 149944 =      0.000 ...   299.888 secs
+Ready.
+/home/mc3784/grasp-lift-eeg-detection/.venv/lib/python2.7/site-packages/mne/epochs.py:217: RuntimeWarning: The events passed to the Epochs constructor are not chronologically ordered.
+  'ordered.', RuntimeWarning)
+Saving data for subject2 in files
+Loading data for subject 3... 
+loading data from data/train/subj3_series1_data.csv
+data/train/subj3_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=122262
+    Range : 0 ... 122261 =      0.000 ...   244.522 secs
+Ready.
+loading data from data/train/subj3_series2_data.csv
+data/train/subj3_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=192860
+    Range : 0 ... 192859 =      0.000 ...   385.718 secs
+Ready.
+loading data from data/train/subj3_series3_data.csv
+data/train/subj3_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=229357
+    Range : 0 ... 229356 =      0.000 ...   458.712 secs
+Ready.
+loading data from data/train/subj3_series4_data.csv
+data/train/subj3_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=196416
+    Range : 0 ... 196415 =      0.000 ...   392.830 secs
+Ready.
+loading data from data/train/subj3_series5_data.csv
+data/train/subj3_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=248572
+    Range : 0 ... 248571 =      0.000 ...   497.142 secs
+Ready.
+loading data from data/train/subj3_series6_data.csv
+data/train/subj3_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=116333
+    Range : 0 ... 116332 =      0.000 ...   232.664 secs
+Ready.
+loading data from data/train/subj3_series7_data.csv
+data/train/subj3_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=115079
+    Range : 0 ... 115078 =      0.000 ...   230.156 secs
+Ready.
+loading data from data/train/subj3_series8_data.csv
+data/train/subj3_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=114946
+    Range : 0 ... 114945 =      0.000 ...   229.890 secs
+Ready.
+Saving data for subject3 in files
+Loading data for subject 4... 
+loading data from data/train/subj4_series1_data.csv
+data/train/subj4_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=246612
+    Range : 0 ... 246611 =      0.000 ...   493.222 secs
+Ready.
+loading data from data/train/subj4_series2_data.csv
+data/train/subj4_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=208724
+    Range : 0 ... 208723 =      0.000 ...   417.446 secs
+Ready.
+loading data from data/train/subj4_series3_data.csv
+data/train/subj4_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=131495
+    Range : 0 ... 131494 =      0.000 ...   262.988 secs
+Ready.
+loading data from data/train/subj4_series4_data.csv
+data/train/subj4_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=205592
+    Range : 0 ... 205591 =      0.000 ...   411.182 secs
+Ready.
+loading data from data/train/subj4_series5_data.csv
+data/train/subj4_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=123027
+    Range : 0 ... 123026 =      0.000 ...   246.052 secs
+Ready.
+loading data from data/train/subj4_series6_data.csv
+data/train/subj4_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=243659
+    Range : 0 ... 243658 =      0.000 ...   487.316 secs
+Ready.
+loading data from data/train/subj4_series7_data.csv
+data/train/subj4_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=121495
+    Range : 0 ... 121494 =      0.000 ...   242.988 secs
+Ready.
+loading data from data/train/subj4_series8_data.csv
+data/train/subj4_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=121920
+    Range : 0 ... 121919 =      0.000 ...   243.838 secs
+Ready.
+Saving data for subject4 in files
+Loading data for subject 5... 
+loading data from data/train/subj5_series1_data.csv
+data/train/subj5_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=227967
+    Range : 0 ... 227966 =      0.000 ...   455.932 secs
+Ready.
+loading data from data/train/subj5_series2_data.csv
+data/train/subj5_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=138058
+    Range : 0 ... 138057 =      0.000 ...   276.114 secs
+Ready.
+loading data from data/train/subj5_series3_data.csv
+data/train/subj5_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=259176
+    Range : 0 ... 259175 =      0.000 ...   518.350 secs
+Ready.
+loading data from data/train/subj5_series4_data.csv
+data/train/subj5_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=136440
+    Range : 0 ... 136439 =      0.000 ...   272.878 secs
+Ready.
+loading data from data/train/subj5_series5_data.csv
+data/train/subj5_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=265586
+    Range : 0 ... 265585 =      0.000 ...   531.170 secs
+Ready.
+loading data from data/train/subj5_series6_data.csv
+data/train/subj5_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=226735
+    Range : 0 ... 226734 =      0.000 ...   453.468 secs
+Ready.
+loading data from data/train/subj5_series7_data.csv
+data/train/subj5_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=135260
+    Range : 0 ... 135259 =      0.000 ...   270.518 secs
+Ready.
+loading data from data/train/subj5_series8_data.csv
+data/train/subj5_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=129504
+    Range : 0 ... 129503 =      0.000 ...   259.006 secs
+Ready.
+Saving data for subject5 in files
+Loading data for subject 6... 
+loading data from data/train/subj6_series1_data.csv
+data/train/subj6_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=149580
+    Range : 0 ... 149579 =      0.000 ...   299.158 secs
+Ready.
+loading data from data/train/subj6_series2_data.csv
+data/train/subj6_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=267738
+    Range : 0 ... 267737 =      0.000 ...   535.474 secs
+Ready.
+loading data from data/train/subj6_series3_data.csv
+data/train/subj6_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=221892
+    Range : 0 ... 221891 =      0.000 ...   443.782 secs
+Ready.
+loading data from data/train/subj6_series4_data.csv
+data/train/subj6_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=137731
+    Range : 0 ... 137730 =      0.000 ...   275.460 secs
+Ready.
+loading data from data/train/subj6_series5_data.csv
+data/train/subj6_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=215765
+    Range : 0 ... 215764 =      0.000 ...   431.528 secs
+Ready.
+loading data from data/train/subj6_series6_data.csv
+data/train/subj6_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=257483
+    Range : 0 ... 257482 =      0.000 ...   514.964 secs
+Ready.
+loading data from data/train/subj6_series7_data.csv
+data/train/subj6_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=133391
+    Range : 0 ... 133390 =      0.000 ...   266.780 secs
+Ready.
+loading data from data/train/subj6_series8_data.csv
+data/train/subj6_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=135837
+    Range : 0 ... 135836 =      0.000 ...   271.672 secs
+Ready.
+Saving data for subject6 in files
+Loading data for subject 7... 
+loading data from data/train/subj7_series1_data.csv
+data/train/subj7_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=307632
+    Range : 0 ... 307631 =      0.000 ...   615.262 secs
+Ready.
+loading data from data/train/subj7_series2_data.csv
+data/train/subj7_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=212898
+    Range : 0 ... 212897 =      0.000 ...   425.794 secs
+Ready.
+loading data from data/train/subj7_series3_data.csv
+data/train/subj7_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=223684
+    Range : 0 ... 223683 =      0.000 ...   447.366 secs
+Ready.
+loading data from data/train/subj7_series4_data.csv
+data/train/subj7_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=263711
+    Range : 0 ... 263710 =      0.000 ...   527.420 secs
+Ready.
+loading data from data/train/subj7_series5_data.csv
+data/train/subj7_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=212546
+    Range : 0 ... 212545 =      0.000 ...   425.090 secs
+Ready.
+loading data from data/train/subj7_series6_data.csv
+data/train/subj7_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=147148
+    Range : 0 ... 147147 =      0.000 ...   294.294 secs
+Ready.
+loading data from data/train/subj7_series7_data.csv
+data/train/subj7_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=144897
+    Range : 0 ... 144896 =      0.000 ...   289.792 secs
+Ready.
+loading data from data/train/subj7_series8_data.csv
+data/train/subj7_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=140424
+    Range : 0 ... 140423 =      0.000 ...   280.846 secs
+Ready.
+Saving data for subject7 in files
+Loading data for subject 8... 
+loading data from data/train/subj8_series1_data.csv
+data/train/subj8_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=200430
+    Range : 0 ... 200429 =      0.000 ...   400.858 secs
+Ready.
+loading data from data/train/subj8_series2_data.csv
+data/train/subj8_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=239180
+    Range : 0 ... 239179 =      0.000 ...   478.358 secs
+Ready.
+loading data from data/train/subj8_series3_data.csv
+data/train/subj8_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=123701
+    Range : 0 ... 123700 =      0.000 ...   247.400 secs
+Ready.
+loading data from data/train/subj8_series4_data.csv
+data/train/subj8_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=242562
+    Range : 0 ... 242561 =      0.000 ...   485.122 secs
+Ready.
+loading data from data/train/subj8_series5_data.csv
+data/train/subj8_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=118716
+    Range : 0 ... 118715 =      0.000 ...   237.430 secs
+Ready.
+loading data from data/train/subj8_series6_data.csv
+data/train/subj8_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=191769
+    Range : 0 ... 191768 =      0.000 ...   383.536 secs
+Ready.
+loading data from data/train/subj8_series7_data.csv
+data/train/subj8_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=118614
+    Range : 0 ... 118613 =      0.000 ...   237.226 secs
+Ready.
+loading data from data/train/subj8_series8_data.csv
+data/train/subj8_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=124095
+    Range : 0 ... 124094 =      0.000 ...   248.188 secs
+Ready.
+Saving data for subject8 in files
+Loading data for subject 9... 
+loading data from data/train/subj9_series1_data.csv
+data/train/subj9_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=141426
+    Range : 0 ... 141425 =      0.000 ...   282.850 secs
+Ready.
+loading data from data/train/subj9_series2_data.csv
+data/train/subj9_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=209212
+    Range : 0 ... 209211 =      0.000 ...   418.422 secs
+Ready.
+loading data from data/train/subj9_series3_data.csv
+data/train/subj9_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=252772
+    Range : 0 ... 252771 =      0.000 ...   505.542 secs
+Ready.
+loading data from data/train/subj9_series4_data.csv
+data/train/subj9_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=208470
+    Range : 0 ... 208469 =      0.000 ...   416.938 secs
+Ready.
+loading data from data/train/subj9_series5_data.csv
+data/train/subj9_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=248301
+    Range : 0 ... 248300 =      0.000 ...   496.600 secs
+Ready.
+loading data from data/train/subj9_series6_data.csv
+data/train/subj9_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=131609
+    Range : 0 ... 131608 =      0.000 ...   263.216 secs
+Ready.
+loading data from data/train/subj9_series7_data.csv
+data/train/subj9_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=128210
+    Range : 0 ... 128209 =      0.000 ...   256.418 secs
+Ready.
+loading data from data/train/subj9_series8_data.csv
+data/train/subj9_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=127494
+    Range : 0 ... 127493 =      0.000 ...   254.986 secs
+Ready.
+Saving data for subject9 in files
+Loading data for subject 10... 
+loading data from data/train/subj10_series1_data.csv
+data/train/subj10_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=262387
+    Range : 0 ... 262386 =      0.000 ...   524.772 secs
+Ready.
+loading data from data/train/subj10_series2_data.csv
+data/train/subj10_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=216873
+    Range : 0 ... 216872 =      0.000 ...   433.744 secs
+Ready.
+loading data from data/train/subj10_series3_data.csv
+data/train/subj10_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=142976
+    Range : 0 ... 142975 =      0.000 ...   285.950 secs
+Ready.
+loading data from data/train/subj10_series4_data.csv
+data/train/subj10_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=211225
+    Range : 0 ... 211224 =      0.000 ...   422.448 secs
+Ready.
+loading data from data/train/subj10_series5_data.csv
+data/train/subj10_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=136568
+    Range : 0 ... 136567 =      0.000 ...   273.134 secs
+Ready.
+loading data from data/train/subj10_series6_data.csv
+data/train/subj10_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=257334
+    Range : 0 ... 257333 =      0.000 ...   514.666 secs
+Ready.
+loading data from data/train/subj10_series7_data.csv
+data/train/subj10_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=132819
+    Range : 0 ... 132818 =      0.000 ...   265.636 secs
+Ready.
+loading data from data/train/subj10_series8_data.csv
+data/train/subj10_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=126733
+    Range : 0 ... 126732 =      0.000 ...   253.464 secs
+Ready.
+Saving data for subject10 in files
+Loading data for subject 11... 
+loading data from data/train/subj11_series1_data.csv
+data/train/subj11_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=223400
+    Range : 0 ... 223399 =      0.000 ...   446.798 secs
+Ready.
+loading data from data/train/subj11_series2_data.csv
+data/train/subj11_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=147697
+    Range : 0 ... 147696 =      0.000 ...   295.392 secs
+Ready.
+loading data from data/train/subj11_series3_data.csv
+data/train/subj11_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=266245
+    Range : 0 ... 266244 =      0.000 ...   532.488 secs
+Ready.
+loading data from data/train/subj11_series4_data.csv
+data/train/subj11_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=141452
+    Range : 0 ... 141451 =      0.000 ...   282.902 secs
+Ready.
+loading data from data/train/subj11_series5_data.csv
+data/train/subj11_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=250788
+    Range : 0 ... 250787 =      0.000 ...   501.574 secs
+Ready.
+loading data from data/train/subj11_series6_data.csv
+data/train/subj11_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=215983
+    Range : 0 ... 215982 =      0.000 ...   431.964 secs
+Ready.
+loading data from data/train/subj11_series7_data.csv
+data/train/subj11_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=141183
+    Range : 0 ... 141182 =      0.000 ...   282.364 secs
+Ready.
+loading data from data/train/subj11_series8_data.csv
+data/train/subj11_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=134289
+    Range : 0 ... 134288 =      0.000 ...   268.576 secs
+Ready.
+Saving data for subject11 in files
+Loading data for subject 12... 
+loading data from data/train/subj12_series1_data.csv
+data/train/subj12_series1_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=151123
+    Range : 0 ... 151122 =      0.000 ...   302.244 secs
+Ready.
+loading data from data/train/subj12_series2_data.csv
+data/train/subj12_series2_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=270047
+    Range : 0 ... 270046 =      0.000 ...   540.092 secs
+Ready.
+loading data from data/train/subj12_series3_data.csv
+data/train/subj12_series3_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=230872
+    Range : 0 ... 230871 =      0.000 ...   461.742 secs
+Ready.
+loading data from data/train/subj12_series4_data.csv
+data/train/subj12_series4_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=156229
+    Range : 0 ... 156228 =      0.000 ...   312.456 secs
+Ready.
+loading data from data/train/subj12_series5_data.csv
+data/train/subj12_series5_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=230568
+    Range : 0 ... 230567 =      0.000 ...   461.134 secs
+Ready.
+loading data from data/train/subj12_series6_data.csv
+data/train/subj12_series6_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=266571
+    Range : 0 ... 266570 =      0.000 ...   533.140 secs
+Ready.
+loading data from data/train/subj12_series7_data.csv
+data/train/subj12_series7_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=147835
+    Range : 0 ... 147834 =      0.000 ...   295.668 secs
+Ready.
+loading data from data/train/subj12_series8_data.csv
+data/train/subj12_series8_events.csv
+Creating RawArray with float64 data, n_channels=38, n_times=154678
+    Range : 0 ... 154677 =      0.000 ...   309.354 secs
+Ready.
+Saving data for subject12 in files
