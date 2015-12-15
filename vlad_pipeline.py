@@ -60,9 +60,17 @@ for i in range(0,6):
 print("ACU score ", aucTotal/6)
 
 with open("AUC.csv", "a") as myfile:
-    myfile.write("Starting new run")
+    myfile.write("svm__C, myown__num_clusters,mean_validation_score,cv_validation_scores\n")
     for i in estimator.grid_scores_:
-	fileLine= i, "splitValues: ",estimator.grid_scores_[0].cv_validation_scores
-	myfile.write(fileLine)
-	myfile.write("/n")
-
+	#fileLine= i, "splitValues: ",estimator.grid_scores_[0].cv_validation_scores
+	#myfile.write(fileLine)
+	#myfile.write("/n")
+	#print fileLine
+	myfile.write(str(i.parameters.get("svm__C")))
+	myfile.write(", ")
+	myfile.write(str(i.parameters.get("myown__num_clusters")))
+        myfile.write(", ")
+        myfile.write(str(i.mean_validation_score))
+        myfile.write(", ")
+        myfile.write(str(i.cv_validation_scores))
+	myfile.write("\n")
