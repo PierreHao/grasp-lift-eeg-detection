@@ -15,7 +15,7 @@ from vlad import Vlad
 DATA_DIR = "data/processed/"
 N_COMPONENT = "3"
 
-subjects = range(1, 13)
+subjects = range(1, 2)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
@@ -29,7 +29,7 @@ y_test = y_test[:,2]
 print(X.shape, y.shape)
 print(X_test.shape, y_test.shape)
 
-clf = svm.SVC(kernel='linear')
+clf = svm.SVC(kernel='linear',C=1)
 myVlad = Vlad()
 pca = PCA(n_components=0.9)
 scaler = StandardScaler()
@@ -38,7 +38,8 @@ vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling',
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
 num_clusters = [2**5]
-estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters))
+cGrid=[0.1, 1, 10,100]
+estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid))
 estimator.fit(X,y)
 estimator.predict(X_test)
 
@@ -57,3 +58,11 @@ for i in range(0,6):
 	print("for label",i,"auc=",singleAuc)
 
 print("ACU score ", aucTotal/6)
+
+with open("AUC.csv", "a") as myfile:
+    myfile.write("Starting new run")
+    for i in estimator.grid_scores_:
+	fileLine= i, "splitValues: ",estimator.grid_scores_[0].cv_validation_scores
+	myfile.write(fileLine)
+	myfile.write("/n")
+
