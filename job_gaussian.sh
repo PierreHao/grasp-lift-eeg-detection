@@ -5,6 +5,7 @@
 #PBS -N gaussian_vlad
 #PBS -M ajr619@nyu.edu
 #PBS -j oe
+#PBS -m e
 
 module purge
 
