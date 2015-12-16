@@ -1,3 +1,4 @@
+import datetime
 import numpy as np
 import numpy.linalg as LA
 import matplotlib.pyplot as plt
@@ -11,8 +12,10 @@ from sklearn.metrics import roc_auc_score
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from vlad import Vlad
-
 import sys
+
+
+print("Start time is ", datetime.datetime.now())
 
 DATA_DIR = "data/processed/"
 N_COMPONENT = sys.argv[1]
@@ -77,3 +80,5 @@ with open(fileName, "a") as myfile:
         myfile.write(", ")
         myfile.write(str(i.cv_validation_scores)[1:-1])
 	myfile.write("\n")
+
+print("End time is ", datetime.datetime.now())

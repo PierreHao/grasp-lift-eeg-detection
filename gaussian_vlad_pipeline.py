@@ -31,7 +31,7 @@ y_test = y_test[:,2]
 print(X.shape, y.shape)
 print(X_test.shape, y_test.shape)
 
-clf = svm.SVC(kernel='rbf',C=1)
+clf = svm.SVC(kernel='linear',C=1)
 myVlad = Vlad()
 pca = PCA(n_components=0.9)
 scaler = StandardScaler()
