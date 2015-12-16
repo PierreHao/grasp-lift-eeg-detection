@@ -1,4 +1,3 @@
-import datetime
 import numpy as np
 import numpy.linalg as LA
 import matplotlib.pyplot as plt
@@ -12,10 +11,8 @@ from sklearn.metrics import roc_auc_score
 from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from vlad import Vlad
+
 import sys
-
-
-print("Start time is ", datetime.datetime.now())
 
 DATA_DIR = "data/processed/"
 N_COMPONENT = sys.argv[1]
@@ -42,8 +39,8 @@ scaler = StandardScaler()
 vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling', scaler), ('svm', clf)])
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8]
-cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
+num_clusters = [2**3, 2**4, 2**6, 2**7]
+cGrid=[2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3]
 estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12 )
 estimator.fit(X,y)
 estimator.predict(X_test)
@@ -80,5 +77,3 @@ with open(fileName, "a") as myfile:
         myfile.write(", ")
         myfile.write(str(i.cv_validation_scores)[1:-1])
 	myfile.write("\n")
-
-print("End time is ", datetime.datetime.now())
