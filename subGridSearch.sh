@@ -1,7 +1,7 @@
 #!/bin/bash
-#PBS -l nodes=1:ppn=12:gpus=1:titan
+#PBS -l nodes=1:ppn=12
 #PBS -l walltime=10:00:00
-#PBS -l mem=64GB
+#PBS -l mem=128GB
 #PBS -N vlad_pipeline
 #PBS -M mc3784@nyu.edu
 #PBS -j oe
