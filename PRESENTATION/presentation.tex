@@ -164,7 +164,7 @@ Identify hand motions from EEG recordings
 \item  Size: 1.5 Gb.
 \item $17985850$ total number of samples
 \item $\sim180k$ samples per subject
-\item sampling every: $0.2 s$
+\item sampling rate: $ 500Hz$
 \item Multi class classification: \textit{Hand start}, \textit{First digit touch}, \textit{Start load phase}, \textit{lift off}, \textit{Replace}, \textit{Both released}
 \end{itemize}
 \end{column}
@@ -278,21 +278,35 @@ VLAD:  $ \sim   12s$ with $32$ clusters and $1M$ local descriptors (with ubuntu 
 \begin{table}
 \begin{tabular}{l l l}
 \toprule
-\textbf{ SVM C} & \textbf{VLAD clusters} & \textbf{score} \\
-\midrule
-0.1 & 32 & 0.267\\
-1 & 32 & 0.268\\
-10 & 32 & 0.269\\
+$\gamma$ & \textbf{C} & \textbf{mean score} \\
+
+%\textbf{ SVM C} & \textbf{VLAD clusters} & \textbf{score} \\
+%\midrule
+%0.1 & 32 & 0.267\\
+%1 & 32 & 0.268\\
+%10 & 32 & 0.269\\
+
+1 &1 & 0.36215\\
+2 & 1 & 0.3222\\
+4 & 1 & 0.27447\\
+0.25&2&0.41857\\
+%0.302951388889,0.5,2
+%0.254340277778,1,2
+%0.217881944444,2,2
+%0.175347222222,4,2
 \bottomrule
 \end{tabular}
-\caption{N components=2}
+\caption{N components=3, $k=1024$}
 \end{table}
 \end{frame}
 
 
 \begin{frame}
+Number of clusters: $k=1024$: 
 \frametitle{AUC}
-text
+\begin{center}
+\includegraphics[height=3.0in]{roc.png}
+\end{center}
 \end{frame}
 
 
@@ -317,6 +331,26 @@ text
 \end{frame} 
 
 
+\begin{frame}
+\frametitle{References}
+\begin{itemize}
+\item \url{https://www.kaggle.com/c/grasp-and-lift-eeg-detection/forums}
+\item \url{https://github.com/alexandrebarachant/Grasp-and-lift-EEG-challenge}
+\item \url{http://www.gipsa-lab.grenoble-inp.fr/~bertrand.rivet/references/Rivet2009a.pdf}
+\item \url{https://lear.inrialpes.fr/pubs/2010/JDSP10/jegou_compactimagerepresentation.pdf}
+\item \url{http://www.eecs.tufts.edu/~dsculley/papers/fastkmeans.pdf}
+
+\end{itemize}
+\end{frame} 
+
+
+\begin{frame}
+\frametitle{Acknowledgements}
+\begin{itemize}
+\item Zaid Harchaoui
+\item Alexandre Barachant and Rafal Cyco\'n
+\end{itemize}
+\end{frame} 
 %svm__C, myown__num_clusters,mean_validation_score,cv_validation_scores
 %0.1, 32, 0.267913510101,  0.26278409  0.28858902  0.25236742
 %1, 32, 0.268386994949,  0.26420455  0.29024621  0.25071023
