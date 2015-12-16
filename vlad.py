@@ -12,10 +12,8 @@ class Vlad:
 
     def my_vlad(self, loc_desc, centroids, clusters):
         #print(centroids.shape, local_descriptors.shape)
-        V = np.zeros([centroids.shape[0],local_descriptors.shape[1]])
-        scaler = StandardScaler()
-        scaler.fit(loc_desc)
-        local_descriptors = scaler.transform(loc_desc)
+        V = np.zeros([centroids.shape[0],loc_desc.shape[1]])
+        local_descriptors = self.scaler.transform(loc_desc)
         #print(V.shape, centroids.shape, local_descriptors.shape)
         #distances = pairwise_distances(local_descriptors, centroids, metric='euclidean')
         #clusters = np.argmin(distances,axis=1)
@@ -45,9 +43,9 @@ class Vlad:
         tmp = X.swapaxes(1,2)
         tmp = tmp.reshape(tmp.shape[0]*tmp.shape[1], tmp.shape[2])
 
-        scaler = StandardScaler()
-        scaler.fit(tmp)
-        tmp = scaler.transform(tmp)
+        self.scaler = StandardScaler()
+        self.scaler.fit(tmp)
+        tmp = self.scaler.transform(tmp)
 
         kmeans = MiniBatchKMeans(init='k-means++', n_clusters=self.num_clusters, batch_size=1000)
         kmeans.fit(tmp)

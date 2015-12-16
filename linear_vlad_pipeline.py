@@ -20,7 +20,7 @@ print("Start time is ", datetime.datetime.now())
 DATA_DIR = "data/processed/"
 N_COMPONENT = sys.argv[1]
 
-subjects = range(1, 12)
+subjects = range(1, 13)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
@@ -42,7 +42,7 @@ scaler = StandardScaler()
 vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling', scaler), ('svm', clf)])
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8]
+num_clusters = [2**9, 2**10, 2**11, 2**12, 2**13, 2**14, 2** 15]
 cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
 estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12 )
 estimator.fit(X,y)
