@@ -2,7 +2,7 @@
 #PBS -l nodes=1:ppn=12
 #PBS -l walltime=10:00:00
 #PBS -l mem=164GB
-#PBS -N linear_vlad
+#PBS -N gaussian_vlad
 #PBS -M ajr619@nyu.edu
 #PBS -j oe
 
@@ -18,6 +18,7 @@ cd $PBS_O_WORKDIR
 cp -R $SRCDIR/data $RUNDIR
 cp $SRCDIR/vlad.py $RUNDIR
 cp $SRCDIR/linear_vlad_pipeline.py $RUNDIR
+cp $SRCDIR/gaussian_vlad_pipeline.py $RUNDIR
 cp $SRCDIR/requirements.txt $RUNDIR
 
 module load virtualenv/12.1.1;
@@ -31,4 +32,4 @@ source .venv/bin/activate;
 pip install -r requirements.txt
 cd $RUNDIR
 
-python linear_vlad_pipeline.py 3 
+python gaussian_vlad_pipeline.py 3 
