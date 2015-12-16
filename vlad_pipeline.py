@@ -12,10 +12,12 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from vlad import Vlad
 
-DATA_DIR = "data/processed/"
-N_COMPONENT = "3"
+import sys
 
-subjects = range(1, 2)
+DATA_DIR = "data/processed/"
+N_COMPONENT = sys.argv[1]
+
+subjects = range(1, 12)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
@@ -39,7 +41,7 @@ vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling',
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
 num_clusters = [2**5]
 cGrid=[0.1, 1, 10,100]
-estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid))
+estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12 )
 estimator.fit(X,y)
 estimator.predict(X_test)
 
@@ -59,7 +61,8 @@ for i in range(0,6):
 
 print("ACU score ", aucTotal/6)
 
-with open("AUC.csv", "a") as myfile:
+fileName = "AUC_"+N_COMPONENT+"components.csv"
+with open(fileName, "a") as myfile:
     myfile.write("svm__C, myown__num_clusters,mean_validation_score,cv_validation_scores\n")
     for i in estimator.grid_scores_:
 	#fileLine= i, "splitValues: ",estimator.grid_scores_[0].cv_validation_scores
@@ -72,5 +75,5 @@ with open("AUC.csv", "a") as myfile:
         myfile.write(", ")
         myfile.write(str(i.mean_validation_score))
         myfile.write(", ")
-        myfile.write(str(i.cv_validation_scores))
+        myfile.write(str(i.cv_validation_scores)[1:-1])
 	myfile.write("\n")
