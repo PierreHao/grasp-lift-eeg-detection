@@ -158,7 +158,10 @@ Identify hand motions from EEG recordings
 \item Training data set: 96 files
 \item testing data set: 24 files
 \item  Size: 1.5 Gb.
-\item Multi class classification: Hand start, First digit touch, Start load phase, lift off, Replace, Both released
+\item $17985850$ total number of samples
+\item $\sim180k$ samples per subject
+\item sampling every: $0.2 s$
+\item Multi class classification: \textit{Hand start}, \textit{First digit touch}, \textit{Start load phase}, \textit{lift off}, \textit{Replace}, \textit{Both released}
 \end{itemize}
 \end{column}
 \end{columns}
@@ -172,7 +175,8 @@ Mean Column-wise Area Under the Curve (MCAUC): the mean of individual areas unde
 
 \end{column}
 \begin{column}{.5\textwidth}
-\begin{center}\includegraphics[height=1.5in]{9NpXJ.png}\end{center}
+\begin{center}
+Sample ROC curve \includegraphics[height=1.5in]{9NpXJ.png}\end{center}
 \end{column}
 \end{columns}
 
@@ -202,8 +206,8 @@ Number of clusters: $2^3\rightarrow 2^{15}$
 number of components $=0.9$
 \end{block}
 
-\begin{block}{SVM}
-C: $2^{-3}\rightarrow 2^{3}$ 
+\begin{block}{SVM - Linear \& Gaussian}
+$C$ and $\gamma$ varies from $2^{-3}$to $ 2^{3}$ 
 \end{block}
 \end{column} 
 \begin{column}{.1\textwidth}
@@ -217,8 +221,9 @@ C: $2^{-3}\rightarrow 2^{3}$
 \frametitle{Performance optimization}
 \begin{itemize}
 \item Preprocess:  store the data for each component and use that in the next step of the pipeline
-\item VLAD: save the cluster centroids in an instance variable (in kmeans algorithm) and reuse them in VLAD
-\item kmeans: inertia convergence criteria 
+\item VLAD: save intermediate states as bumpy binary files and use them for the other parts of the pipeline
+%save the cluster centroids in an instance variable (in kmeans algorithm) and reuse them in VLAD
+\item kmeans: inertia convergence criteria. 
 \end{itemize} 
 \end{frame}
 
