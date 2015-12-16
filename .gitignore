@@ -5,3 +5,4 @@ data
 *.swp
 .ipynb_checkpoints
 __pycache__
+*.o*
