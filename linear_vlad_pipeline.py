@@ -39,8 +39,8 @@ scaler = StandardScaler()
 vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling', scaler), ('svm', clf)])
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-num_clusters = [2**5]
-cGrid=[0.1, 1, 10,100]
+num_clusters = [2**3, 2**4, 2**6, 2**7]
+cGrid=[2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3]
 estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12 )
 estimator.fit(X,y)
 estimator.predict(X_test)
