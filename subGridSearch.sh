@@ -1,10 +1,11 @@
 #!/bin/bash
 #PBS -l nodes=1:ppn=12
-#PBS -l walltime=10:00:00
+#PBS -l walltime=15:00:00
 #PBS -l mem=164GB
 #PBS -N linear_vlad
-#PBS -M ajr619@nyu.edu
+#PBS -M ajr619@nyu.edu,mc3784@nyu.edu
 #PBS -j oe
+#PBS -m e
 
 module purge
 
@@ -31,4 +32,4 @@ source .venv/bin/activate;
 pip install -r requirements.txt
 cd $RUNDIR
 
-python linear_vlad_pipeline.py 3 
+#python linear_vlad_pipeline.py 3 
