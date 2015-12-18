@@ -1,11 +1,11 @@
-#!/bin/bash
-#PBS -l nodes=1:ppn=2
+#PBS -l nodes=1:ppn=12
 #PBS -l walltime=100:00:00
-#PBS -l mem=78GB
-#PBS -N kmeans
+#PBS -l mem=164GB
+#PBS -N linear_bofw_pipeline
 #PBS -M mc3784@nyu.edu
 #PBS -j oe
 #PBS -m e
+
 
 
 module purge
@@ -23,4 +23,4 @@ module load virtualenv/12.1.1;
 module load scipy/intel/0.16.0
 
 source /home/mc3784/kmeans/venv2/bin/activate
-python onlineKmeansComparison.py ${PBS_JOBID}
+python linear_bofw_pipeline.py
