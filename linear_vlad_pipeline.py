@@ -17,10 +17,11 @@ import sys
 
 print("Start time is ", datetime.datetime.now())
 
-DATA_DIR = "data/processed/"
-N_COMPONENT = sys.argv[1]
+DATA_DIR = "data/processed"
+#N_COMPONENT = sys.argv[1]
+N_COMPONENT = 2
 
-subjects = range(1, 13)
+subjects = range(1, 2)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])

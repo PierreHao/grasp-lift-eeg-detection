@@ -17,7 +17,7 @@ import sys
 
 print("Start time is ", datetime.datetime.now())
 
-DATA_DIR = "/home/mc3784/grasp-lift-eeg-detection/data/processed"
+DATA_DIR = "data/processed"
 N_COMPONENT = 2
 
 subjects = range(1, 2)
@@ -41,10 +41,11 @@ scaler = StandardScaler()
 
 bofw_pipeline = Pipeline([('myown', myBofw), ('bofw_pca', pca), ('bofw_scaling', scaler), ('svm', clf)])
 
-num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-#num_clusters = [2**8,2**9, 2**10, 2**11]
-cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
-estimator = GridSearchCV(bofw_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12 )
+#num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
+num_clusters = [2**8]
+#cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
+cGrid=[2**-4]
+estimator = GridSearchCV(bofw_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =1,verbose=100)
 estimator.fit(X,y)
 estimator.predict(X_test)
 
@@ -56,17 +57,18 @@ print(score)
 y_binary = label_binarize(y_test,classes=[1,2,3,4,5,6])
 predictions_binary=label_binarize(predictions,classes=[1,2,3,4,5,6])
 
+fileName = "AUC_"+str(N_COMPONENT)+"components.csv"
 aucTotal = 0
+fileName = "AUC_"+str(N_COMPONENT)+"components.csv"	
 for i in range(0,6):
-	singleAuc=roc_auc_score(y_binary[:,i],predictions_binary[:,i])
-	aucTotal+=singleAuc
-	print("for label",i,"auc=",singleAuc)
+    singleAuc=roc_auc_score(y_binary[:,i],predictions_binary[:,i])
+    aucTotal+=singleAuc
+    print("for label",i,"auc=",singleAuc)
+totalAUC=aucTotal/6
 
-print("ACU score ", aucTotal/6)
-
-fileName = "AUC_"+N_COMPONENT+"components.csv"
 with open(fileName, "a") as myfile:
-    myfile.write("best estimator:"+str(estimator.best_score_))  	
+    myfile.write("ACU score " + str(totalAUC)+"\n")
+    myfile.write("best estimator:"+str(estimator.best_score_)+"\n")  	
     myfile.write("svm__C, myown__num_clusters,mean_validation_score,cv_validation_scores\n")
     for i in estimator.grid_scores_:
 	#fileLine= i, "splitValues: ",estimator.grid_scores_[0].cv_validation_scores
