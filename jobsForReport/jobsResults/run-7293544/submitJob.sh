@@ -22,4 +22,4 @@ module load virtualenv/12.1.1;
 module load scipy/intel/0.16.0
 
 source /home/mc3784/kmeans/venv2/bin/activate
-python linear_vlad_pipeline.py
+python onlineKmeansComparison.py

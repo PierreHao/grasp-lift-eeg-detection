@@ -5,20 +5,24 @@ from sklearn.externals import six
 from sklearn.metrics.pairwise import pairwise_distances
 from sklearn.preprocessing import StandardScaler
 
-class Bofw:
+class Vlad:
     def __init__(self, num_clusters = 8):
         self.num_clusters = num_clusters
         return
 
-    def my_bofw(self, loc_desc, centroids, clusters):
-	print "DB: start my_bofw"
-    	B = np.zeros(len(centroids[:,1]))
-    	local_descriptors = self.scaler.transform(loc_desc)
-    	for iter, center in enumerate(centroids):
-	    points_belonging_to_cluster = local_descriptors[clusters == iter]
-            B[iter] = points_belonging_to_cluster.shape[0]
-	    print "DB: points_belonging_to_cluster.shape[0]: ",points_belonging_to_cluster.shape[0]
-    	return B/LA.norm(B)
+    def my_vlad(self, loc_desc, centroids, clusters):
+        #print(centroids.shape, local_descriptors.shape)
+        V = np.zeros([centroids.shape[0],loc_desc.shape[1]])
+        local_descriptors = self.scaler.transform(loc_desc)
+        #print(V.shape, centroids.shape, local_descriptors.shape)
+        #distances = pairwise_distances(local_descriptors, centroids, metric='euclidean')
+        #clusters = np.argmin(distances,axis=1)
+        for iter, center in enumerate(centroids):
+            points_belonging_to_cluster = local_descriptors[clusters == iter]
+            V[iter] = np.sum(points_belonging_to_cluster - center, axis=0)
+        V = V.reshape(1, V.shape[0]*V.shape[1])
+        #print ('Vlad shape is ', V.shape)
+        return V/LA.norm(V)
 
     def get_params(self, deep=True):
         return dict(num_clusters = self.num_clusters)
@@ -35,17 +39,17 @@ class Bofw:
                 setattr(self, key, value)
 
     def fit(self, X, y=None):
-	print ("DB: in fit method")
+        print("in fit method", X.shape, y.shape, self.num_clusters)
         tmp = X.swapaxes(1,2)
         tmp = tmp.reshape(tmp.shape[0]*tmp.shape[1], tmp.shape[2])
 
         self.scaler = StandardScaler()
         self.scaler.fit(tmp)
         tmp = self.scaler.transform(tmp)
-	print "DB: before Kmeans"
+
         kmeans = MiniBatchKMeans(init='k-means++', n_clusters=self.num_clusters, batch_size=1000)
         kmeans.fit(tmp)
-	print "DB: after kmeans"
+
         self.centers = kmeans.cluster_centers_
         self.clusters = kmeans.labels_
         print("shape of centers is ",self.centers.shape)
@@ -60,7 +64,7 @@ class Bofw:
         print("starting for loop")
         for i in range(tot_range):
             start_ind = 0
-            out[i] = self.my_bofw(X[i], self.centers, self.clusters[start_ind:start_ind + 500])
+            out[i] = self.my_vlad(X[i], self.centers, self.clusters[start_ind:start_ind + 500])
             start_ind = start_ind + 500
 
         out = np.insert(out, 0, 1, axis=1)
