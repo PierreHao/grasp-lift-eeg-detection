@@ -19,7 +19,7 @@ print("Start time is ", datetime.datetime.now())
 
 DATA_DIR = "data/processed"
 #N_COMPONENT = sys.argv[1]
-N_COMPONENT = 2
+N_COMPONENT = 3
 
 subjects = range(1, 13)
 
