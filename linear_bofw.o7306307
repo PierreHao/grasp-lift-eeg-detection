@@ -1,0 +1,1872 @@
+
+New python executable in .venv/bin/python
+Installing setuptools, pip...done.
+You are using pip version 6.1.1, however version 7.1.2 is available.
+You should consider upgrading via the 'pip install --upgrade pip' command.
+Requirement already satisfied (use --upgrade to upgrade): audioread==2.0.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied (use --upgrade to upgrade): cycler==0.9.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 2))
+Requirement already satisfied (use --upgrade to upgrade): decorator==4.0.4 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied (use --upgrade to upgrade): joblib==0.9.3 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 4))
+Requirement already satisfied (use --upgrade to upgrade): librosa==0.4.1 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 5))
+Requirement already satisfied (use --upgrade to upgrade): matplotlib==1.5.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 6))
+Requirement already satisfied (use --upgrade to upgrade): mne==0.10.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 7))
+Requirement already satisfied (use --upgrade to upgrade): numpy==1.10.1 in /share/apps/numpy/1.10.1/intel/lib/python2.7/site-packages (from -r requirements.txt (line 8))
+Requirement already satisfied (use --upgrade to upgrade): pandas==0.17.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 9))
+Requirement already satisfied (use --upgrade to upgrade): pyparsing==2.0.5 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 10))
+Requirement already satisfied (use --upgrade to upgrade): python-dateutil==2.4.2 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 11))
+Requirement already satisfied (use --upgrade to upgrade): pytz==2015.7 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 12))
+Requirement already satisfied (use --upgrade to upgrade): scikit-learn==0.17 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 13))
+Requirement already satisfied (use --upgrade to upgrade): scipy==0.16.0 in /share/apps/scipy/0.16.0/intel/lib/python2.7/site-packages (from -r requirements.txt (line 14))
+Requirement already satisfied (use --upgrade to upgrade): six==1.10.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 15))
+Requirement already satisfied (use --upgrade to upgrade): sklearn==0.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 16))
+Requirement already satisfied (use --upgrade to upgrade): wheel==0.24.0 in ./.venv/lib/python2.7/site-packages (from -r requirements.txt (line 17))
+('Start time is ', datetime.datetime(2015, 12, 19, 2, 52, 41, 382765))
+((13824, 32, 500), (13824,))
+((4891, 32, 500), (4891,))
+Fitting 3 folds for each of 36 candidates, totalling 108 fits
+Memmaping (shape=(13824, 32, 500), dtype=float64) to new file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=256 ..........................
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+('length is one ', ['num_clusters'], 256)
+[CV] svm__C=0.0625, myown__num_clusters=256 ..........................
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.0625, myown__num_clusters=256 ..........................
+('lengthPickling array (shape=(13824,), dtype=int64). i
+s one ', ['num_clusters'], 256)
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.125, myown__num_clusters=256 ...........................
+Pickling array (shape=(13824,), dtype=int64).
+('length is one ', ['num_clusters'], 256)
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.125, myown__num_clusters=256 ...........................
+Pickling array (shape=(13824,), dtype=int64).
+('length is one ', ['num_clusters'], 256)
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.125, myown__num_clusters=256 ...........................
+Pickling array (shape=(13824,), dtype=int64).
+('Pickling array (shape=(9216,), dtype=int64).le
+ngth is one ', ['num_clusters'], 256)
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.25, myown__num_clusters=256 ............................
+Pickling array (shape=(13824,), dtype=int64).
+('length is one ', ['num_clusters'], 256)
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.25, myown__num_clusters=256 ............................
+Pickling array (shape=(13824,), dtype=int64).
+('length is one ', ['num_clusters'], 256)
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+('length is one ', ['num_clusters'], 256)
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.25, myown__num_clusters=256 ............................
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.5, myown__num_clusters=256 .............................
+('length is one ', ['num_clusters'], 256Pickling array (shape=(13824,), dtype=int64).)
+
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+[CV] svm__C=0.5, myown__num_clusters=256 .............................
+Pickling array (shape=(13824,), dtype=int64).
+('length is one ', ['num_clusters'], 256)
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=256 .............................
+('length is one ', ['num_clusters'], 256)
+('length is one ', ['num_clusters'], 256)
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .. svm__C=0.125, myown__num_clusters=256, score=0.166667 -17.3min
+[Parallel(n_jobs=12)]: Done   1 tasks      | elapsed: 17.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .. svm__C=0.125, myown__num_clusters=256, score=0.166667 -17.4min
+[Parallel(n_jobs=12)]: Done   2 tasks      | elapsed: 17.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] .... svm__C=0.5, myown__num_clusters=256, score=0.166667 -17.4min
+[Parallel(n_jobs=12)]: Done   3 tasks      | elapsed: 17.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] ... svm__C=0.25, myown__num_clusters=256, score=0.166667 -17.5min
+[Parallel(n_jobs=12)]: Done   4 tasks      | elapsed: 17.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] . svm__C=0.0625, myown__num_clusters=256, score=0.166667 -17.5min
+[Parallel(n_jobs=12)]: Done   5 tasks      | elapsed: 17.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] ... svm__C=0.25, myown__num_clusters=256, score=0.166667 -17.6min
+[Parallel(n_jobs=12)]: Done   6 tasks      | elapsed: 17.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] . svm__C=0.0625, myown__num_clusters=256, score=0.166667 -17.7min
+[Parallel(n_jobs=12)]: Done   7 tasks      | elapsed: 17.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] .... svm__C=0.5, myown__num_clusters=256, score=0.166667 -17.7min
+[Parallel(n_jobs=12)]: Done   8 tasks      | elapsed: 17.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ... svm__C=0.25, myown__num_clusters=256, score=0.166667 -18.5min
+[Parallel(n_jobs=12)]: Done   9 tasks      | elapsed: 18.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] .. svm__C=0.125, myown__num_clusters=256, score=0.166667 -18.7min
+[Parallel(n_jobs=12)]: Done  10 tasks      | elapsed: 18.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] . svm__C=0.0625, myown__num_clusters=256, score=0.166667 -19.5min
+[Parallel(n_jobs=12)]: Done  11 tasks      | elapsed: 19.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+[CV] .... svm__C=0.5, myown__num_clusters=256, score=0.166667 -19.7min
+[Parallel(n_jobs=12)]: Done  12 tasks      | elapsed: 19.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=256 ...............................
+('length is one ', ['num_clusters'], 256)
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=1, myown__num_clusters=256, score=0.166667 -17.4min
+[Parallel(n_jobs=12)]: Done  13 tasks      | elapsed: 34.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=256 ..............................
+('length is one ', ['num_clusters'], 256)
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] ...... svm__C=2, myown__num_clusters=256, score=0.166667 -17.7min
+[Parallel(n_jobs=12)]: Done  14 tasks      | elapsed: 35.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=256 ..............................
+('length is one ', ['num_clusters'], 256)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=4, myown__num_clusters=256, score=0.166667 -17.9min
+[Parallel(n_jobs=12)]: Done  15 tasks      | elapsed: 35.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=256 ..............................
+('length is one ', ['num_clusters'], 256)
+[CV] ...... svm__C=8, myown__num_clusters=256, score=0.166667 -16.9min
+[Parallel(n_jobs=12)]: Done  16 tasks      | elapsed: 35.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=512 ..........................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=2, myown__num_clusters=256, score=0.166667 -18.2min
+[Parallel(n_jobs=12)]: Done  17 tasks      | elapsed: 35.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=512 ..........................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=2, myown__num_clusters=256, score=0.166667 -18.7min
+[Parallel(n_jobs=12)]: Done  18 tasks      | elapsed: 36.2min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=512 ..........................
+('length is one ', ['num_clusters'], 512)
+[CV] ...... svm__C=1, myown__num_clusters=256, score=0.166667 -18.8min
+[Parallel(n_jobs=12)]: Done  19 tasks      | elapsed: 36.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=512 ...........................
+('length is one ', ['num_clusters'], 512)
+[CV] ...... svm__C=1, myown__num_clusters=256, score=0.166667 -19.1min
+[Parallel(n_jobs=12)]: Done  20 tasks      | elapsed: 36.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=512 ...........................
+('length is one ', ['num_clusters'], 512)
+[CV] ...... svm__C=8, myown__num_clusters=256, score=0.166667 -17.1min
+[Parallel(n_jobs=12)]: Done  21 tasks      | elapsed: 36.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=512 ...........................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=4, myown__num_clusters=256, score=0.166667 -19.2min
+[Parallel(n_jobs=12)]: Done  22 tasks      | elapsed: 36.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=512 ............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=4, myown__num_clusters=256, score=0.166667 -19.7min
+[Parallel(n_jobs=12)]: Done  23 tasks      | elapsed: 38.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=512 ............................
+('length is one ', ['num_clusters'], 512)
+[CV] ...... svm__C=8, myown__num_clusters=256, score=0.166667 -20.3min
+[Parallel(n_jobs=12)]: Done  24 tasks      | elapsed: 40.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=512 ............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=16, myown__num_clusters=256, score=0.166667 -11.6min
+[Parallel(n_jobs=12)]: Done  25 tasks      | elapsed: 46.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=512 .............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (256, 32))
+('in transform method', (9216, 32, 500), 256)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=16, myown__num_clusters=256, score=0.166667 -22.4min
+[Parallel(n_jobs=12)]: Done  26 tasks      | elapsed: 57.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=512 .............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 256)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=16, myown__num_clusters=256, score=0.166667 -24.7min
+[Parallel(n_jobs=12)]: Done  27 tasks      | elapsed: 60.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=512 .............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=0.5, myown__num_clusters=512, score=0.166667 -25.4min
+[Parallel(n_jobs=12)]: Done  28 tasks      | elapsed: 71.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] . svm__C=0.0625, myown__num_clusters=512, score=0.166667 -40.4min
+[Parallel(n_jobs=12)]: Done  29 tasks      | elapsed: 76.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+[CV] . svm__C=0.0625, myown__num_clusters=512, score=0.166667 -41.2min
+[Parallel(n_jobs=12)]: Done  30 tasks      | elapsed: 77.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .. svm__C=0.125, myown__num_clusters=512, score=0.166667 -42.3min
+[Parallel(n_jobs=12)]: Done  31 tasks      | elapsed: 78.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .. svm__C=0.125, myown__num_clusters=512, score=0.166667 -43.0min
+[Parallel(n_jobs=12)]: Done  32 tasks      | elapsed: 79.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+[CV] . svm__C=0.0625, myown__num_clusters=512, score=0.166667 -43.9min
+[Parallel(n_jobs=12)]: Done  33 tasks      | elapsed: 80.2min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+[CV] .. svm__C=0.125, myown__num_clusters=512, score=0.166667 -44.6min
+[Parallel(n_jobs=12)]: Done  34 tasks      | elapsed: 80.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+[CV] ... svm__C=0.25, myown__num_clusters=512, score=0.166667 -43.0min
+[Parallel(n_jobs=12)]: Done  35 tasks      | elapsed: 81.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+[CV] ... svm__C=0.25, myown__num_clusters=512, score=0.166667 -44.7min
+[Parallel(n_jobs=12)]: Done  36 tasks      | elapsed: 81.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ... svm__C=0.25, myown__num_clusters=512, score=0.166667 -46.3min
+[Parallel(n_jobs=12)]: Done  37 tasks      | elapsed: 86.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=1, myown__num_clusters=512, score=0.166667 -22.8min
+[Parallel(n_jobs=12)]: Done  38 tasks      | elapsed: 94.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=0.5, myown__num_clusters=512, score=0.166667 -40.5min
+[Parallel(n_jobs=12)]: Done  39 tasks      | elapsed: 98.1min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=512 ...............................
+('length is one ', ['num_clusters'], 512)
+[CV] .... svm__C=0.5, myown__num_clusters=512, score=0.166667 -39.5min
+[Parallel(n_jobs=12)]: Done  40 tasks      | elapsed: 99.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=512 ..............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=1, myown__num_clusters=512, score=0.166667 -26.7min
+[Parallel(n_jobs=12)]: Done  41 tasks      | elapsed: 103.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=512 ..............................
+('length is one ', ['num_clusters'], 512)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=1, myown__num_clusters=512, score=0.166667 -38.8min
+[Parallel(n_jobs=12)]: Done  42 tasks      | elapsed: 114.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=512 ..............................
+('length is one ', ['num_clusters'], 512)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] ...... svm__C=2, myown__num_clusters=512, score=0.166667 -35.9min
+[Parallel(n_jobs=12)]: Done  43 tasks      | elapsed: 115.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=1024 .........................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=4, myown__num_clusters=512, score=0.166667 -35.1min
+[Parallel(n_jobs=12)]: Done  44 tasks      | elapsed: 116.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=1024 .........................
+('length is one ', ['num_clusters'], 1024)
+[CV] ...... svm__C=2, myown__num_clusters=512, score=0.166667 -37.7min
+[Parallel(n_jobs=12)]: Done  45 tasks      | elapsed: 116.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=1024 .........................
+('length is one ', ['num_clusters'], 1024)
+[CV] ...... svm__C=4, myown__num_clusters=512, score=0.166667 -35.7min
+[Parallel(n_jobs=12)]: Done  46 tasks      | elapsed: 116.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=1024 ..........................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] ...... svm__C=8, myown__num_clusters=512, score=0.166667 -32.0min
+[Parallel(n_jobs=12)]: Done  47 tasks      | elapsed: 118.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=1024 ..........................
+('length is one ', ['num_clusters'], 1024)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=4, myown__num_clusters=512, score=0.166667 -39.8min
+[Parallel(n_jobs=12)]: Done  48 tasks      | elapsed: 121.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=1024 ..........................
+('length is one ', ['num_clusters'], 1024)
+[CV] ...... svm__C=2, myown__num_clusters=512, score=0.166667 -41.4min
+[Parallel(n_jobs=12)]: Done  49 tasks      | elapsed: 121.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=1024 ...........................
+('length is one ', ['num_clusters'], 1024)
+[CV] ..... svm__C=16, myown__num_clusters=512, score=0.166667 -18.5min
+[Parallel(n_jobs=12)]: Done  50 tasks      | elapsed: 122.1min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=1024 ...........................
+('length is one ', ['num_clusters'], 1024)
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=8, myown__num_clusters=512, score=0.166667 -31.0min
+[Parallel(n_jobs=12)]: Done  51 tasks      | elapsed: 125.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=1024 ...........................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ...... svm__C=8, myown__num_clusters=512, score=0.166667 -37.0min
+[Parallel(n_jobs=12)]: Done  52 tasks      | elapsed: 135.1min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=1024 ............................
+('length is one ', ['num_clusters'], 1024)
+[CV] ..... svm__C=16, myown__num_clusters=512, score=0.166667 -36.6min
+[Parallel(n_jobs=12)]: Done  53 tasks      | elapsed: 136.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=1024 ............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (512, 32))
+('in transform method', (9216, 32, 500), 512)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 512)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=16, myown__num_clusters=512, score=0.166667 -37.0min
+[Parallel(n_jobs=12)]: Done  54 tasks      | elapsed: 151.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=1024 ............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV]  svm__C=0.0625, myown__num_clusters=1024, score=0.166667 -61.4min
+[Parallel(n_jobs=12)]: Done  55 tasks      | elapsed: 176.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] . svm__C=0.125, myown__num_clusters=1024, score=0.166667 -65.1min
+[Parallel(n_jobs=12)]: Done  56 tasks      | elapsed: 181.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+[CV]  svm__C=0.0625, myown__num_clusters=1024, score=0.166667 -65.6min
+[Parallel(n_jobs=12)]: Done  57 tasks      | elapsed: 182.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] . svm__C=0.125, myown__num_clusters=1024, score=0.166667 -65.3min
+[Parallel(n_jobs=12)]: Done  58 tasks      | elapsed: 183.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] .. svm__C=0.25, myown__num_clusters=1024, score=0.166667 -61.1min
+[Parallel(n_jobs=12)]: Done  59 tasks      | elapsed: 186.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+[CV] .. svm__C=0.25, myown__num_clusters=1024, score=0.166667 -65.8min
+[Parallel(n_jobs=12)]: Done  60 tasks      | elapsed: 187.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV]  svm__C=0.0625, myown__num_clusters=1024, score=0.166667 -78.4min
+[Parallel(n_jobs=12)]: Done  61 tasks      | elapsed: 195.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+[CV] ... svm__C=0.5, myown__num_clusters=1024, score=0.166667 -61.5min
+[Parallel(n_jobs=12)]: Done  62 tasks      | elapsed: 197.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+[CV] ... svm__C=0.5, myown__num_clusters=1024, score=0.166667 -63.7min
+[Parallel(n_jobs=12)]: Done  63 tasks      | elapsed: 198.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] . svm__C=0.125, myown__num_clusters=1024, score=0.166667 -80.1min
+[Parallel(n_jobs=12)]: Done  64 tasks      | elapsed: 201.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+[CV] .. svm__C=0.25, myown__num_clusters=1024, score=0.166667 -80.0min
+[Parallel(n_jobs=12)]: Done  65 tasks      | elapsed: 201.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ... svm__C=0.5, myown__num_clusters=1024, score=0.166667 -71.0min
+[Parallel(n_jobs=12)]: Done  66 tasks      | elapsed: 222.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=1024 ..............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] ..... svm__C=1, myown__num_clusters=1024, score=0.166667 -64.4min
+[Parallel(n_jobs=12)]: Done  67 tasks      | elapsed: 246.1min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=1024 .............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=2, myown__num_clusters=1024, score=0.166667 -67.8min
+[Parallel(n_jobs=12)]: Done  68 tasks      | elapsed: 251.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=1024 .............................
+('length is one ', ['num_clusters'], 1024)
+[CV] ..... svm__C=1, myown__num_clusters=1024, score=0.166667 -69.4min
+[Parallel(n_jobs=12)]: Done  69 tasks      | elapsed: 251.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=1024 .............................
+('length is one ', ['num_clusters'], 1024)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=2, myown__num_clusters=1024, score=0.166667 -67.5min
+[Parallel(n_jobs=12)]: Done  70 tasks      | elapsed: 254.2min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=2048 .........................
+('length is one ', ['num_clusters'], 2048)
+[CV] ..... svm__C=2, myown__num_clusters=1024, score=0.166667 -67.2min
+[Parallel(n_jobs=12)]: Done  71 tasks      | elapsed: 255.2min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=2048 .........................
+('length is one ', ['num_clusters'], 2048)
+[CV] ..... svm__C=1, myown__num_clusters=1024, score=0.166667 -78.6min
+[Parallel(n_jobs=12)]: Done  72 tasks      | elapsed: 255.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.0625, myown__num_clusters=2048 .........................
+('length is one ', ['num_clusters'], 2048)
+[CV] ..... svm__C=4, myown__num_clusters=1024, score=0.166667 -59.1min
+[Parallel(n_jobs=12)]: Done  73 tasks      | elapsed: 256.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=2048 ..........................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=4, myown__num_clusters=1024, score=0.166667 -67.5min
+[Parallel(n_jobs=12)]: Done  74 tasks      | elapsed: 262.5min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=2048 ..........................
+('length is one ', ['num_clusters'], 2048)
+[CV] ..... svm__C=4, myown__num_clusters=1024, score=0.166667 -65.4min
+[Parallel(n_jobs=12)]: Done  75 tasks      | elapsed: 264.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.125, myown__num_clusters=2048 ..........................
+('length is one ', ['num_clusters'], 2048)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=8, myown__num_clusters=1024, score=0.166667 -76.9min
+[Parallel(n_jobs=12)]: Done  76 tasks      | elapsed: 278.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=2048 ...........................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ..... svm__C=8, myown__num_clusters=1024, score=0.166667 -81.8min
+[Parallel(n_jobs=12)]: Done  77 tasks      | elapsed: 283.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=2048 ...........................
+('length is one ', ['num_clusters'], 2048)
+[CV] ..... svm__C=8, myown__num_clusters=1024, score=0.166667 -61.1min
+[Parallel(n_jobs=12)]: Done  78 tasks      | elapsed: 284.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.25, myown__num_clusters=2048 ...........................
+('length is one ', ['num_clusters'], 2048)
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (1024, 32))
+('in transform method', (9216, 32, 500), 1024)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=16, myown__num_clusters=1024, score=0.166667 -58.3min
+[Parallel(n_jobs=12)]: Done  79 tasks      | elapsed: 304.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=2048 ............................
+('length is one ', ['num_clusters'], 2048)
+[CV] .... svm__C=16, myown__num_clusters=1024, score=0.166667 -53.9min
+[Parallel(n_jobs=12)]: Done  80 tasks      | elapsed: 305.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=2048 ............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=16, myown__num_clusters=1024, score=0.166667 -61.3min
+[Parallel(n_jobs=12)]: Done  81 tasks      | elapsed: 312.7min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=0.5, myown__num_clusters=2048 ............................
+('length is one ', ['num_clusters'], 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV]  svm__C=0.0625, myown__num_clusters=2048, score=0.166667 -110.1min
+[Parallel(n_jobs=12)]: Done  82 tasks      | elapsed: 365.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV]  svm__C=0.0625, myown__num_clusters=2048, score=0.166667 -113.0min
+[Parallel(n_jobs=12)]: Done  83 tasks      | elapsed: 367.2min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV]  svm__C=0.0625, myown__num_clusters=2048, score=0.166667 -117.2min
+[Parallel(n_jobs=12)]: Done  84 tasks      | elapsed: 372.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=1, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV]  svm__C=0.125, myown__num_clusters=2048, score=0.166667 -116.7min
+[Parallel(n_jobs=12)]: Done  85 tasks      | elapsed: 373.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV]  svm__C=0.125, myown__num_clusters=2048, score=0.166667 -115.8min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+[CV] .. svm__C=0.25, myown__num_clusters=2048, score=0.166667 -97.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=2, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+[CV]  svm__C=0.125, myown__num_clusters=2048, score=0.166667 -121.6min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] . svm__C=0.25, myown__num_clusters=2048, score=0.166667 -117.1min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] . svm__C=0.25, myown__num_clusters=2048, score=0.166667 -113.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=4, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+[CV] ... svm__C=0.5, myown__num_clusters=2048, score=0.166667 -94.4min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] .. svm__C=0.5, myown__num_clusters=2048, score=0.166667 -116.9min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .. svm__C=0.5, myown__num_clusters=2048, score=0.166667 -140.0min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=8, myown__num_clusters=2048 ..............................
+('length is one ', ['num_clusters'], 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=1, myown__num_clusters=2048, score=0.166667 -130.3min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=2048 .............................
+('length is one ', ['num_clusters'], 2048)
+[CV] .... svm__C=4, myown__num_clusters=2048, score=0.166667 -114.2min
+Memmaping (shape=(13824, 32, 500), dtype=float64) to old file /dev/shm/joblib_memmaping_pool_9651_47177488/9651-47589456-47116080-0.pkl
+Pickling array (shape=(13824,), dtype=int64).
+Pickling array (shape=(9216,), dtype=int64).
+Pickling array (shape=(4608,), dtype=int64).
+[CV] svm__C=16, myown__num_clusters=2048 .............................
+('length is one ', ['num_clusters'], 2048)
+[CV] .... svm__C=1, myown__num_clusters=2048, score=0.166667 -127.4min
+[CV] svm__C=16, myown__num_clusters=2048 .............................
+('length is one ', ['num_clusters'], 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=2, myown__num_clusters=2048, score=0.166667 -127.9min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] .... svm__C=1, myown__num_clusters=2048, score=0.166667 -142.1min
+[CV] .... svm__C=2, myown__num_clusters=2048, score=0.166667 -132.9min
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] .... svm__C=2, myown__num_clusters=2048, score=0.166667 -146.6min
+[CV] .... svm__C=4, myown__num_clusters=2048, score=0.166667 -131.9min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=4, myown__num_clusters=2048, score=0.166667 -144.1min
+[CV] .... svm__C=8, myown__num_clusters=2048, score=0.166667 -118.2min
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+[CV] .... svm__C=8, myown__num_clusters=2048, score=0.166667 -136.4min
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=16, myown__num_clusters=2048, score=0.166667 -55.0min
+[CV] .... svm__C=8, myown__num_clusters=2048, score=0.166667 -111.0min
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=16, myown__num_clusters=2048, score=0.166667 -63.0min
+[CV] .... svm__C=16, myown__num_clusters=2048, score=0.166667 -64.0min
+[Parallel(n_jobs=12)]: Done 108 out of 108 | elapsed: 561.5min finished
+('length is one ', ['num_clusters'], 256)
+('shape of centers is ', (256, 32))
+('in transform method', (13824, 32, 500), 256)
+('X.shape is ', (13824, 500, 32))
+starting for loop
+13824
+('in transform method', (4891, 32, 500), 256)
+('X.shape is ', (4891, 500, 32))
+starting for loop
+4891
+('in transform method', (4891, 32, 500), 256)
+('X.shape is ', (4891, 500, 32))
+starting for loop
+4891
+('in transform method', (4891, 32, 500), 256)
+('X.shape is ', (4891, 500, 32))
+starting for loop
+4891
+0.166837047639
+('for label', 0, 'auc=', 0.5)
+('for label', 1, 'auc=', 0.5)
+('for label', 2, 'auc=', 0.5)
+('for label', 3, 'auc=', 0.5)
+('for label', 4, 'auc=', 0.5)
+('for label', 5, 'auc=', 0.5)
+('End time is ', datetime.datetime(2015, 12, 19, 12, 17, 7, 298136))
+
+
+
+
+
+
