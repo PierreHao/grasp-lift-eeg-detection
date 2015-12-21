@@ -16,7 +16,7 @@ class Bofw:
         for iter, center in enumerate(centroids):
             points_belonging_to_cluster = local_descriptors[clusters == iter]
             B[iter] = points_belonging_to_cluster.shape[0]
-        return B/LA.norm(B)
+        return B
 
     def get_params(self, deep=True):
         return dict(num_clusters = self.num_clusters)

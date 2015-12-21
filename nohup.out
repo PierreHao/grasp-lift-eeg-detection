@@ -70525,3 +70525,4 @@ Saving data for subject12 in files
 ('for label', 4, 'auc=', 0.55801515698303872)
 ('for label', 5, 'auc=', 0.55909313725490195)
 ('ACU score ', 0.57422764254398484)
+[Parallel(n_jobs=1)]: Done   1 jobs       | elapsed:   10.6s

@@ -40,11 +40,11 @@ scaler = StandardScaler()
 
 bofw_pipeline = Pipeline([('myown', myBofw), ('bofw_pca', pca), ('bofw_scaling', scaler), ('svm', clf)])
 
-#num_clusters = [2**3]
-num_clusters = [2**8,2**9,2**10,2**11]
-cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
-#cGrid=[2**-4]
-estimator = GridSearchCV(bofw_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12,verbose=100)
+#num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
+num_clusters = [2**8,2**10,2**11]
+#cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
+cGrid=[2**-4,2**-3,2**-1,2**0]
+estimator = GridSearchCV(bofw_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =1,verbose=3)
 estimator.fit(X,y)
 estimator.predict(X_test)
 
