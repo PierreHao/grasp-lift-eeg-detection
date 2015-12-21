@@ -1586,3 +1586,28 @@ Pickling array (shape=(4608,), dtype=int64).
 ('in transform method', (9216, 32, 500), 2048)
 ('X.shape is ', (9216, 500, 32))
 starting for loop
+('out.shape is ', (9216, 65537))
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+('out.shape is ', (9216, 65537))
+('out.shape is ', (9216, 65537))
+
+
+
+
+
+
+
+
+
+

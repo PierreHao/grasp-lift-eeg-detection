@@ -62,8 +62,8 @@ class Vlad:
         print("X.shape is ", X.shape)
         out = np.empty((tot_range, self.centers.shape[0]*X.shape[2]))
         print("starting for loop")
+	start_ind = 0
         for i in range(tot_range):
-            start_ind = 0
             out[i] = self.my_vlad(X[i], self.centers, self.clusters[start_ind:start_ind + 500])
             start_ind = start_ind + 500
 

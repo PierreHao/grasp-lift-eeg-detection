@@ -43,9 +43,11 @@ scaler = StandardScaler()
 vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling', scaler), ('svm', clf)])
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-num_clusters = [2**8, 2**9, 2**10, 2**11]
+#num_clusters=[2**6]
+num_clusters = [2**8,2**10,2**11]
 cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
-estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12,verbose=100 )
+#cGrid=[2**-4]
+estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =12,verbose=100)
 estimator.fit(X,y)
 estimator.predict(X_test)
 
@@ -64,7 +66,7 @@ for i in range(0,6):
 	print("for label",i,"auc=",singleAuc)
 
 print("ACU score ", aucTotal/6)
-fileName = "AUC_"+N_COMPONENT+"components.csv"
+fileName = "AUC_"+str(N_COMPONENT)+"components.csv"
 with open(fileName, "a") as myfile:
     myfile.write("ACU score " + str(totalAUC)+"\n")
     myfile.write("best estimator:"+str(estimator.best_score_)+"\n")

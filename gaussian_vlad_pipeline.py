@@ -32,19 +32,19 @@ y_test = y_test[:,2]
 print(X.shape, y.shape)
 print(X_test.shape, y_test.shape)
 
-clf = svm.SVC(kernel='linear',C=1)
+clf = svm.SVC(kernel='rbf',C=1)
 myVlad = Vlad()
 pca = PCA(n_components=0.9)
 scaler = StandardScaler()
 
 vlad_pipeline = Pipeline([('myown', myVlad), ('vlad_pca', pca), ('vlad_scaling', scaler), ('svm', clf)])
 
-#num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-num_clusters = [64]
-cGrid=[2**3]
-#gammaGrid=[2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3]
+num_clusters = [2**8, 2**9, 2**10, 2**11]
+#cGrid= [2**8,2**9,2**10,2**11]
+#cGrid=[2**3]
+cGrid=[2**-4,2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3,2**4]
 
-estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =8 )
+estimator = GridSearchCV(vlad_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs = 12,verbose=100)
 estimator.fit(X,y)
 estimator.predict(X_test)
 
@@ -66,6 +66,7 @@ print("ACU score ", aucTotal/6)
 
 fileName = "AUC_"+str(N_COMPONENT)+"components.csv"
 with open(fileName, "w") as myfile:
+    myfile.write("best estimator:"+str(estimator.best_score_)+"\n")
     writer = csv.writer(myfile, delimiter = ",")
     paramKeys = list(estimator.grid_scores_[0].parameters.keys())
 

@@ -54,8 +54,8 @@ class Bofw:
         out = np.empty((tot_range, self.centers.shape[0]))
         print("starting for loop")
         print tot_range
+	start_ind = 0
         for i in range(tot_range):
-            start_ind = 0
             out[i] = self.my_bofw(X[i], self.centers, self.clusters[start_ind:start_ind + 500])
             start_ind = start_ind + 500
         out = np.insert(out, 0, 1, axis=1)
