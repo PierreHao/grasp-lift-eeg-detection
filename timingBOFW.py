@@ -20,7 +20,8 @@ def profile_memory_and_time(function, *args, **kwargs):
     elapsed = timeit.default_timer() - start_time
     return memory[0], elapsed,return_val
 
-inputSizesToGenerate =[[2**15,2**10],[2**17,2**10],[2**19,2**10]] 
+
+inputSizesToGenerate =[[2**8,2**2],[2**9,2**2],[2**10,2**2],[2**11,2**2]] 
 scaler = StandardScaler()
 times=[]
 memoris=[]
@@ -29,13 +30,14 @@ num_dimension=32
 
 N_COMPONENT = 2
 DATA_DIR = "data/processed"
-subjects = range(1, 13)
+subjects = range(1, 5)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 print X.shape
 
+
+
 for num_samples, num_cluster in inputSizesToGenerate:
-    print "inside the first for loop"
     X=X[:num_samples]
     myBofw = Bofw(num_cluster)
     print "Running for {0} samples of dimension {1}".format(num_samples, num_dimension)
@@ -49,6 +51,7 @@ plt.scatter(numSamples, memoris,color="red")
 plt.title("Memory usage for k = 2**2")
 plt.xlabel("number of samples")
 plt.ylabel("memory")
+#plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.savefig('memoryVaringSamples.png')
 plt.clf()
 plt.scatter(numSamples, times,color="red")
@@ -71,7 +74,6 @@ numSamples=[]
 X=X[:num_samples]
 
 for num_samples, num_cluster in inputSizesToGenerate:
-    print "inside the second for loop"
     myBofw = Bofw(num_cluster)
     print "Running for {0} samples of dimension {1}".format(num_samples, num_dimension)
     memory, time, rval = profile_memory_and_time(myBofw.fit,X)
@@ -84,6 +86,7 @@ plt.scatter(numSamples, memoris,color="red")
 plt.title("Memory usage for samples = 2**8")
 plt.xlabel("number of samples")
 plt.ylabel("memory")
+#plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 plt.savefig('memoryVaringClusters.png')
 plt.clf()
 plt.scatter(numSamples, times,color="red")
