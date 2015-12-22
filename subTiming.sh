@@ -2,7 +2,7 @@
 #PBS -l nodes=1:ppn=12
 #PBS -l walltime=20:00:00
 #PBS -l mem=164GB
-#PBS -N timingBOFW
+#PBS -N timingVLAD
 #PBS -M mc3784@nyu.edu
 #PBS -j oe
 #PBS -m e
@@ -17,8 +17,8 @@ cd $PBS_O_WORKDIR
 
 #cp -R $SRCDIR/* $RUNDIR
 cp -R $SRCDIR/data $RUNDIR
-cp $SRCDIR/bofw.py $RUNDIR
-cp $SRCDIR/timingBOFW.py $RUNDIR
+cp $SRCDIR/vlad.py $RUNDIR
+cp $SRCDIR/timingVLAD.py $RUNDIR
 cp $SRCDIR/requirements.txt $RUNDIR
 
 module load virtualenv/12.1.1;
@@ -33,4 +33,4 @@ pip install -r requirements.txt
 pip install memory_profiler
 cd $RUNDIR
 
-python -u timingBOFW.py
+python -u timingVLAD.py
