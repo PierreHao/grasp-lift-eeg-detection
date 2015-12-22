@@ -123,8 +123,8 @@
 \renewcommand\dbltopfraction{.7}
 \renewcommand\dblfloatpagefraction{.5}
 \renewcommand{\ps@plain}{\let\@mkboth\@gobbletwo%
-  \renewcommand{\@oddhead}{\slugmaster}%
-  \renewcommand{\@evenhead}{\slugmaster}%
+  %\renewcommand{\@oddhead}{\slugmaster}%
+  %\renewcommand{\@evenhead}{\slugmaster}%
   \renewcommand{\@evenfoot}{\hfil\footnotesize\color{header1}\HLsmall\thepage\hfil}%
   \renewcommand{\@oddfoot}{\@evenfoot}}
 \setlength{\textwidth}{6.151in}
@@ -896,7 +896,7 @@ Vol.\ #3, pp.\ #4
 \newcommand{\HLlittlest}{\sixptsize\sf}
 \newcommand{\HLlittlestital}{\sixptsize\sf\itshape}
 \RequirePackage[dvips]{graphics,graphicx}
-\RequirePackage[colorlinks,pdfmark,dvips]{hyperref}
+\RequirePackage[colorlinks]{hyperref}
 \def\wwwbrowser{C:\string\Program\space
 Files\string\Plus!\string\Microsoft\space
 Internet\string\iexplore.exe}

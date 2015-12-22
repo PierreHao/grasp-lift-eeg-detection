@@ -1,0 +1,17 @@
+\begin{thebibliography}{1}
+
+\bibitem{website:way_consoritum}
+{\sc Way Consoritum}, {\em Wearable interfaces for hand function recovery}.
+\newblock \url{http://www.wayproject.eu/}.
+
+\bibitem{website:kaggle-competition}
+{\sc Kaggle Inc}, {\em The home of data science}, June 2015.
+\newblock \url{https://www.kaggle.com/c/grasp-and-lift-eeg-detection}.
+
+\bibitem{naturegal}
+{\sc Matthew~D Luciw, Ewa Jarocka, and Benoni~B Edin}, {\em Multi-channel eeg
+  recordings during 3,936 grasp and lift trials with varying weight and
+  friction},  (2014).
+\newblock \url{http://dx.doi.org/10.1038/sdata.2014.47}.
+
+\end{thebibliography}
