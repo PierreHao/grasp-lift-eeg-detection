@@ -1,8 +1,9 @@
 import datetime
 import numpy as np
 import numpy.linalg as LA
-import matplotlib.pyplot as plt
+import matplotlib as mpl
 mpl.use('Agg')
+import matplotlib.pyplot as plt
 from sklearn.pipeline import Pipeline
 from sklearn import svm
 from sklearn.grid_search import GridSearchCV
@@ -21,7 +22,7 @@ print("Start time is ", datetime.datetime.now())
 DATA_DIR = "data/processed"
 N_COMPONENT = 2
 
-subjects = range(1, 2)
+subjects = range(1, 13)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
@@ -71,9 +72,6 @@ for i in range(n_classes):
     fpr[i], tpr[i], _ = roc_curve(y_binary[:, i], y_predict_prob[:, i])
     roc_auc[i] = auc(fpr[i], tpr[i])
 
-
-
-##############################################################################
 # Plot of a ROC curve for a specific class
 plt.figure()
 ax = plt.subplot(111)
@@ -152,5 +150,6 @@ plt.savefig("ROCMean.pdf")
 
 
 
+from sklearn.metrics import confusion_matrix
 
-
+print confusion_matrix(y_test,predictions)

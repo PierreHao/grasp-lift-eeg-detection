@@ -1,0 +1,991 @@
+(.venv)[ajr619@compute-0-10 grasp-lift-eeg-detection]$ python tmp.py 3
+((1152, 32, 500), (1152,))
+((408, 32, 500), (408,))
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+
+
+
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+
+
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+
+
+
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+
+
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('out.shape is ', (384, 65537))
+('in fit method', (768, 32, 500), (768,), 2048)
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+
+
+
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+
+
+
+
+
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+
+
+
+
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('out.shape is ', (384, 65537))
+('in fit method', (768, 32, 500), (768,), 2048)
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('out.shape is ', (768, 65537))
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+
+('length is one ', ['num_clusters'], 2048)
+
+
+
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('out.shape is ', (768, 65537))
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (768, 65537))
+
+
+
+
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+
+
+
+
+
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+
+
+
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('out.shape is ', (384, 65537))
+('out.shape is ', (768, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (768, 32, 500), (768,), 2048)
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('out.shape is ', (384, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (384, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('out.shape is ', (384, 65537))
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('shape of centers is ', (2048, 32))
+('in transform method', (768, 32, 500), 2048)
+('X.shape is ', (768, 500, 32))
+starting for loop
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('out.shape is ', (768, 65537))
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('in transform method', (384, 32, 500), 2048)
+('X.shape is ', (384, 500, 32))
+starting for loop
+('out.shape is ', (384, 65537))
+('out.shape is ', (384, 65537))
+('out.shape is ', (384, 65537))
+('length is one ', ['num_clusters'], 2048)
+('in fit method', (1152, 32, 500), (1152,), 2048)
+('shape of centers is ', (2048, 32))
+('in transform method', (1152, 32, 500), 2048)
+('X.shape is ', (1152, 500, 32))
+starting for loop
+('out.shape is ', (1152, 65537))
+('in transform method', (408, 32, 500), 2048)
+('X.shape is ', (408, 500, 32))
+starting for loop
+('out.shape is ', (408, 65537))
+('in transform method', (408, 32, 500), 2048)
+('X.shape is ', (408, 500, 32))
+starting for loop
+('out.shape is ', (408, 65537))
+('in transform method', (408, 32, 500), 2048)
+('X.shape is ', (408, 500, 32))
+starting for loop
+('out.shape is ', (408, 65537))
+0.428921568627
+('for label', 0, 'auc=', 0.82500000000000007)
+('for label', 1, 'auc=', 0.62205882352941178)
+('for label', 2, 'auc=', 0.51323529411764701)
+('for label', 3, 'auc=', 0.62058823529411766)
+('for label', 4, 'auc=', 0.66764705882352937)
+('for label', 5, 'auc=', 0.69558823529411762)
+('ACU score ', 0.65735294117647058)
+
