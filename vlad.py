@@ -39,7 +39,7 @@ class Vlad:
                 setattr(self, key, value)
 
     def fit(self, X, y=None):
-        print("in fit method", X.shape, y.shape, self.num_clusters)
+        #print("in fit method", X.shape, y.shape, self.num_clusters)
         tmp = X.swapaxes(1,2)
         tmp = tmp.reshape(tmp.shape[0]*tmp.shape[1], tmp.shape[2])
 

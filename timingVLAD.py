@@ -1,4 +1,3 @@
-
 import numpy as np
 import numpy.linalg as LA
 from sklearn.cluster import MiniBatchKMeans
