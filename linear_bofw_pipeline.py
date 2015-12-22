@@ -13,13 +13,14 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 from bofw import Bofw
 import sys
+from sklearn.metrics import roc_curve, auc
 
 print("Start time is ", datetime.datetime.now())
 
 DATA_DIR = "data/processed"
 N_COMPONENT = 2
 
-subjects = range(1, 13)
+subjects = range(1, 2)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
@@ -41,9 +42,9 @@ scaler = StandardScaler()
 bofw_pipeline = Pipeline([('myown', myBofw), ('bofw_pca', pca), ('bofw_scaling', scaler), ('svm', clf)])
 
 #num_clusters = [2**3, 2**4, 2**5, 2**6, 2**7, 2**8, 2**9 ]
-num_clusters = [2**8,2**10,2**11]
+num_clusters = [2**8]
 #cGrid=[2**-4, 2**-3, 2**-2, 2**-1, 2**0, 2**1, 2**2, 2**3, 2**4]
-cGrid=[2**-4,2**-3,2**-1,2**0]
+cGrid=[2**-4]
 estimator = GridSearchCV(bofw_pipeline, dict(myown__num_clusters=num_clusters,svm__C=cGrid), n_jobs =1,verbose=3)
 estimator.fit(X,y)
 estimator.predict(X_test)
@@ -82,5 +83,40 @@ with open(fileName, "a") as myfile:
         myfile.write(", ")
         myfile.write(str(i.cv_validation_scores)[1:-1])
 	myfile.write("\n")
+
+
+
+#Compute ROC curve and ROC area for each class
+n_classes=y_binary.shape[1]
+fpr = dict()
+tpr = dict()
+roc_auc = dict()
+for i in range(n_classes):
+    fpr[i], tpr[i], _ = roc_curve(y_binary[:, i], score[:, i])
+    roc_auc[i] = auc(fpr[i], tpr[i])
+
+# Compute micro-average ROC curve and ROC area
+fpr["micro"], tpr["micro"], _ = roc_curve(y_test.ravel(), score.ravel())
+roc_auc["micro"] = auc(fpr["micro"], tpr["micro"])
+
+
+##############################################################################
+# Plot of a ROC curve for a specific class
+plt.figure()
+plt.plot(fpr[2], tpr[2], label='ROC curve (area = %0.2f)' % roc_auc[2])
+plt.plot([0, 1], [0, 1], 'k--')
+plt.xlim([0.0, 1.0])
+plt.ylim([0.0, 1.05])
+plt.xlabel('False Positive Rate')
+plt.ylabel('True Positive Rate')
+plt.title('Receiver operating characteristic example')
+plt.legend(loc="lower right")
+plt.show()
+
+
+
+
+
+
 
 print("End time is ", datetime.datetime.now())

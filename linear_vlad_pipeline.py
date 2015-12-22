@@ -19,9 +19,9 @@ print("Start time is ", datetime.datetime.now())
 
 DATA_DIR = "data/processed"
 #N_COMPONENT = sys.argv[1]
-N_COMPONENT = 3
+N_COMPONENT = 2
 
-subjects = range(1, 13)
+subjects = range(1, 2)
 
 X =  np.concatenate([np.load("{0}/{1}/subj{2}_train_data.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
 y =  np.concatenate([np.load("{0}/{1}/subj{2}_train_labels.npy".format(DATA_DIR, N_COMPONENT, subject)) for subject in subjects])
@@ -68,7 +68,6 @@ for i in range(0,6):
 print("ACU score ", aucTotal/6)
 fileName = "AUC_"+str(N_COMPONENT)+"components.csv"
 with open(fileName, "a") as myfile:
-    myfile.write("ACU score " + str(totalAUC)+"\n")
     myfile.write("best estimator:"+str(estimator.best_score_)+"\n")
     myfile.write("svm__C, myown__num_clusters,mean_validation_score,cv_validation_scores\n")
     for i in estimator.grid_scores_:
