@@ -3,7 +3,7 @@
 #PBS -l walltime=30:00:00
 #PBS -l mem=164GB
 #PBS -N linear_vlad
-#PBS -M mc3784@nyu.edu
+#PBS -M ajr619@nyu.edu,mc3784@nyu.edu
 #PBS -j oe
 #PBS -m e
 
