@@ -16,7 +16,7 @@ import sys
 import csv
 
 DATA_DIR = "data/processed/"
-N_COMPONENT = 3
+N_COMPONENT = 2
 
 subjects = range(1, 13)
 
