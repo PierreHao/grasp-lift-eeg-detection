@@ -30,6 +30,7 @@ virtualenv .venv
 source .venv/bin/activate;
 
 pip install -r requirements.txt
+pip install memory_profiler
 cd $RUNDIR
 
 python -u timingBOFW.py
