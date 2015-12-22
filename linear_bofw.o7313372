@@ -1765,3 +1765,65 @@ starting for loop
 ('X.shape is ', (9216, 500, 32))
 starting for loop
 9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=4, myown__num_clusters=2048, score=0.507812 -170.8min
+[CV] svm__C=16, myown__num_clusters=2048 .............................
+('length is one ', ['num_clusters'], 2048)
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=4, myown__num_clusters=2048, score=0.492405 -158.3min
+('shape of centers is ', (2048, 32))
+('in transform method', (9216, 32, 500), 2048)
+('X.shape is ', (9216, 500, 32))
+starting for loop
+9216
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=4, myown__num_clusters=2048, score=0.548394 -191.4min
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ... svm__C=16, myown__num_clusters=1024, score=0.380425 -563.6min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=8, myown__num_clusters=2048, score=0.560981 -210.7min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 1024)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=8, myown__num_clusters=2048, score=0.517795 -182.9min
+[CV] ... svm__C=16, myown__num_clusters=1024, score=0.343099 -583.7min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] .... svm__C=8, myown__num_clusters=2048, score=0.511936 -195.9min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ... svm__C=16, myown__num_clusters=2048, score=0.514974 -318.0min
+[CV] ... svm__C=16, myown__num_clusters=2048, score=0.566189 -319.9min
+('in transform method', (4608, 32, 500), 2048)
+('X.shape is ', (4608, 500, 32))
+starting for loop
+4608
+[CV] ... svm__C=16, myown__num_clusters=2048, score=0.514540 -314.6min
