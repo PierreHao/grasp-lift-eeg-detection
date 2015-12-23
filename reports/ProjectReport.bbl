@@ -45,9 +45,14 @@
   friction}, Scientific Data,  (2014).
 \newblock \url{http://dx.doi.org/10.1038/sdata.2014.47}.
 
+\bibitem{repo:github}
+{\sc Anirudhan~J Rajagopalan and Michele Ceru}, {\em Grasp and lift eeg
+  detection}.
+\newblock \url{https://github.com/rajegannathan/grasp-lift-eeg-detection}.
+
 \bibitem{website:attempt_2}
-{\sc Anirudhan~J Rajagopalan and Michele Ceru}, {\em Attempt 2 at running the
-  baseline}, September 2015.
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em Attempt 2 at running
+  the baseline}, September 2015.
 \newblock
   \url{https://github.com/mc3784/Computational-Machine-Learning-/blob/master/baseline/level1.q}.
 
@@ -57,5 +62,9 @@
   Biomedical Engineering, IEEE Transactions on, 56 (2009), pp.~2035--2043.
 \newblock
   \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4760273}.
+
+\bibitem{art:online_kmeans}
+{\sc D.~Scully}, {\em Web-scale k-means clustering}, In Proceedings of the 19th
+  international conference on World wide web,  (2010), p.~1177–1178.
 
 \end{thebibliography}

@@ -79,6 +79,7 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.2}Algorithm}{10}{subsubsection.5.5.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.3}Implementation}{10}{subsubsection.5.5.3}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.4}Performance}{10}{subsubsection.5.5.4}}
+\citation{art:online_kmeans}
 \@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Vlad feature representation: Runtime with fixed cluster size. (Cluster size in $\qopname  \relax o{log}_{2}$).}}{11}{figure.12}}
 \newlabel{fig:vlad_time_fixed_cluster}{{12}{11}{Vlad feature representation: Runtime with fixed cluster size. (Cluster size in $\log _{2}$)}{figure.12}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces Vlad feature representation: Memory usage with fixed cluster size. (Cluster size in $\qopname  \relax o{log}_{2}$)}}{11}{figure.13}}
@@ -86,16 +87,29 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.5.5}Variance Analysis}{11}{subsubsection.5.5.5}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.6}Building OnlineMiniBatchKMeans model}{11}{subsection.5.6}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.1}Theorey}{11}{subsubsection.5.6.1}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.2}Algorithm}{11}{subsubsection.5.6.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces Vlad feature representation: Runtime with fixed sample size. (Sample size in $\qopname  \relax o{log}_{2}$).}}{12}{figure.14}}
 \newlabel{fig:vlad_time_fixed_sample}{{14}{12}{Vlad feature representation: Runtime with fixed sample size. (Sample size in $\log _{2}$)}{figure.14}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {15}{\ignorespaces Vlad feature representation: Memory usage with fixed sample size. (Sample size in $\qopname  \relax o{log}_{2}$)}}{12}{figure.15}}
 \newlabel{fig:vlad_memory_fixed_sample}{{15}{12}{Vlad feature representation: Memory usage with fixed sample size. (Sample size in $\log _{2}$)}{figure.15}{}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.3}Implementation}{12}{subsubsection.5.6.3}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.4}Performance}{12}{subsubsection.5.6.4}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.5}Variance Analysis}{12}{subsubsection.5.6.5}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Putting it all together}{12}{subsection.5.7}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}HyperParameters}{12}{subsection.5.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.2}Implementation}{12}{subsubsection.5.6.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.6.3}Performance Optimizations}{12}{subsubsection.5.6.3}}
+\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Explained variance ratio of Vlad representation for a subsample (Subject 1). We get variance measures of 99, 95, 90, 77, 65 and 50 for components 994, 807, 780, 478, 353, 232 respectively.}}{13}{figure.16}}
+\newlabel{fig:vlad_variance}{{16}{13}{Explained variance ratio of Vlad representation for a subsample (Subject 1). We get variance measures of 99, 95, 90, 77, 65 and 50 for components 994, 807, 780, 478, 353, 232 respectively}{figure.16}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7}Putting it all together as a pipeline}{13}{subsection.5.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8}HyperParameters}{13}{subsection.5.8}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.1}Preprocessing using xDawn}{13}{subsubsection.5.8.1}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.2}VLAD / BOWF feature representation}{13}{subsubsection.5.8.2}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.3}PCA}{13}{subsubsection.5.8.3}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.8.4}LinearSVM and GaussianSVM}{13}{subsubsection.5.8.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}Results}{13}{section.6}}
+\citation{repo:github}
+\@writefile{toc}{\contentsline {section}{\numberline {7}Future work and Potential Improvements}{14}{section.7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1}Feature Selection}{14}{subsection.7.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2}Pipeline}{14}{subsection.7.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3}Process}{14}{subsection.7.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4}No future data rule}{14}{subsection.7.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {8}Code, Plots and Hardware requirements}{14}{section.8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {8.1}Hardware Requirements}{14}{subsection.8.1}}
 \bibstyle{siam}
 \bibdata{references}
 \bibcite{art:all_about_vlad}{1}
@@ -107,7 +121,7 @@
 \bibcite{art:vlad_aggregate_paper}{7}
 \bibcite{website:sklearn}{8}
 \bibcite{naturegal}{9}
-\bibcite{website:attempt_2}{10}
-\bibcite{art:Xdawn_filter}{11}
-\@writefile{lof}{\contentsline {figure}{\numberline {16}{\ignorespaces Explained variance ratio of Vlad representation for a subsample (Subject 1). We get variance measures of 99, 95, 90, 77, 65 and 50 for components 994, 807, 780, 478, 353, 232 respectively.}}{13}{figure.16}}
-\newlabel{fig:vlad_variance}{{16}{13}{Explained variance ratio of Vlad representation for a subsample (Subject 1). We get variance measures of 99, 95, 90, 77, 65 and 50 for components 994, 807, 780, 478, 353, 232 respectively}{figure.16}{}}
+\bibcite{repo:github}{10}
+\bibcite{website:attempt_2}{11}
+\bibcite{art:Xdawn_filter}{12}
+\bibcite{art:online_kmeans}{13}

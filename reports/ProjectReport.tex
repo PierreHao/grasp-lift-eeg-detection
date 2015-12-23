@@ -311,7 +311,7 @@ Thus the Vlad representation of a sample with local desccriptors of dimension D 
 After concatenating the rows into columns we get a vector of size given by the product of K and D.
 
 \subsubsection{Implementation}
-As discussed in the Bag of Words section, since we are using scikit-learn's pipelines, we want to build an implementation that plays nice with scikit learn.  We implemented the fit, transform, set\_params and get\_params method in our vlad implementation.  A brief descripton of the functions and its operations:
+As discussed in the Bag of Words section, since we are using scikit-learn's pipelines, we want to build an implementation that plays nice with scikit learn.  We implemented the fit, transform, set\_params and get\_params method in our vlad implementation.  A brief description of the functions and its operations:
 \begin{description}
   \item{def fit (X, Y=None)}  For Vlad implementation: learn the vocabulary of the local descriptors.
   \item{def transform (X)}  Transform a sample containing a list of local descriptors into a vector of dimension K x D (product of cluster size and dimension of local descriptors).
@@ -354,12 +354,81 @@ We analyze the variance of the Vlad representation on a subsample to get an idea
 
 \subsection{Building OnlineMiniBatchKMeans model}
 \subsubsection{Theorey}
-\subsubsection{Algorithm}
+Online Kmeans is a version of the unsupervised KMeans algorithm for clustering huge amount of samples\cite{art:online_kmeans}.  It works similar to Stohastic Gradient Descent but takes batches of samples drawn randomly from the original sample distribution and running KMeans on the subsample.
+It is shown that OnlineKMeans has performance comparable to that of KMeans but converges very faster than the originl KMeans algorithm.
 \subsubsection{Implementation}
-\subsubsection{Performance}
-\subsubsection{Variance Analysis}
-\subsection{Putting it all together}
+We implemented online kmeans as a component that plays nice with scikit-learn's pipeline.  We also ran a number of experiments with varying cluster sizes to figure out the performance of our algorithm with respect to scikit-learn's KMeans algorithm.
+\subsubsection{Performance Optimizations}
+We used convergence factor similar to the one used in Scikit-learn's OnlineKMeans to make sure that our algorithm finishes faster.  The performance of our algorithm is very much similar to that of scikit-learn's implementation till sample size --- $2^{17}$ and number of cluster $K = 2^{9}$.
+However, since the performance of our pipeline was the best when the cluster size was 1024 or 2048, we are using the Scikit-Learn's implementation in our final version of our code.
+
+\subsection{Putting it all together as a pipeline}
+We finally built our pipeline using the following components
+  \begin{enumerate}
+    \item Preprocessing using xDawn
+    \item VLAD / BOW feature representation using our Vlad and Bowf components.
+    \item Reduce dimensionality using PCA
+    \item Scaling the features using StandardScaler
+    \item LinearSVM/GaussianSVM on the scaled feature set
+    \item Performance estimation using Mean AUC value.
+  \end{enumerate}
 \subsection{HyperParameters}
+There are a number of hyper parameters which we had to learn for each steps of the pipeline.
+\subsubsection{Preprocessing using xDawn}
+The value of num\_component is a hyperparameter.  We performed an exhaustive grid search on the pipeline using values of 2, 3 and 4.
+
+Since the data preprocessing takes considerable amount of time, we decided to store the processed values as numpy arrays ans use them in the pipeline downstream.  This saved considerable time for our pipeline.
+
+We were able to observe best performance for num\_component = 2.
+
+
+\subsubsection{VLAD / BOWF feature representation}
+An exhaustive grid search for performed for various values of K ranging from $2^{4}$ to $2^{12}$.
+We were able to observe a plateau between K = 1024 and K = 2048.  The best performance was observed for K = 2048, but with K = 4096, the model became computationally intractable.
+
+\subsubsection{PCA}
+We reduced the dimension of the feature set to 90\% of the explained variance of the original dataset.
+
+\subsubsection{LinearSVM and GaussianSVM}
+We ran exhaustive grid search for values of C and Gamma ranging from $2^{-4}$ to $2^{4}$.
+
+\section{Results}
+
+\section{Future work and Potential Improvements}
+\subsection{Feature Selection}
+  On analysing the performance and the choice of features retrospectively, we are able to realize that using just xDawn filters for feature selection might not be a good decision.  
+The baseline uses Linear Discriminant Analysis and a set of Filter Bank along with xDawn for its feature selection.
+The current Vlad and Bowf model should be trained again by using a better feature set to understand the performance difference.
+
+Also, a spatial analysis of the EEG signals with respect to the location of electrodes and analysing the evoked potentials with respect to a particular stimulus whould have given a better understanding of the input data.
+
+The models used in this project should give a much better performance if proper care is taken to select the feature set properly.
+
+\subsection{Pipeline}
+Though we did a grid search on a number of parameters such as C, Gamma, num\_components, and K\@; we didn't do grid search on the dimensionality reduction.  
+This was based on the assumption that for best results the reduced data should still hold the maximum amount of variance.
+Performing grid search on the number of reduced components such that the variance is at 50, 65, 77, 90, 95 and 99 percentile of the orignal variancce would have given better results.
+
+
+\subsection{Process}
+We did a lot of analysis such as the separability of the dataset, variance of the features, characteristics of the raw data retrospectively.  If these analysis were done before starting up with the pipeline, we might have got better feature representations.
+
+\subsection{No future data rule}
+The current implementation does't abide by the no future data rule.  We should find ways to abide by the no future data rule and get good accuracy predictions.
+
+
+\section{Code, Plots and Hardware requirements}
+The complete codebase, HPC job outputs, and original plots are all available at our Github repository.\cite{repo:github}
+
+\subsection{Hardware Requirements}
+The huge size of the dataset requires that we use systems with high capacity.  Almost all our jobs in HPC were run with the following specs:
+\begin{description}
+  \item{CPU Cores:}  12 core.
+  \item{CPU Nodes:}  1 Node.
+  \item{RAM:}  164 GB\@.
+  \item{Runtime:} Minimum 24 hours.  (Jobs with >= 2048 clusters got killed even after 30 hours.)
+  \item{GPU:} None
+\end{description}
 
 \newpage
 
