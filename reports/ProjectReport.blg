@@ -4,45 +4,45 @@ The top-level auxiliary file: ProjectReport.aux
 The style file: siam.bst
 Database file #1: references.bib
 Warning--empty journal in naturegal
-You've used 3 entries,
+You've used 6 entries,
             2030 wiz_defined-function locations,
-            513 strings with 4215 characters,
-and the built_in function-call counts, 698 in all, are:
-= -- 55
-> -- 32
+            526 strings with 4662 characters,
+and the built_in function-call counts, 1374 in all, are:
+= -- 110
+> -- 65
 < -- 0
-+ -- 14
-- -- 10
-* -- 51
-:= -- 122
-add.period$ -- 6
-call.type$ -- 3
-change.case$ -- 14
++ -- 27
+- -- 20
+* -- 92
+:= -- 231
+add.period$ -- 12
+call.type$ -- 6
+change.case$ -- 27
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 29
-empty$ -- 61
-format.name$ -- 10
-if$ -- 135
+cite$ -- 7
+duplicate$ -- 55
+empty$ -- 126
+format.name$ -- 20
+if$ -- 275
 int.to.chr$ -- 0
-int.to.str$ -- 3
+int.to.str$ -- 6
 missing$ -- 1
-newline$ -- 15
-num.names$ -- 6
-pop$ -- 24
+newline$ -- 27
+num.names$ -- 12
+pop$ -- 54
 preamble$ -- 1
-purify$ -- 11
+purify$ -- 22
 quote$ -- 0
-skip$ -- 18
+skip$ -- 39
 stack$ -- 0
-substring$ -- 16
-swap$ -- 6
+substring$ -- 31
+swap$ -- 11
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 12
+type$ -- 24
 warning$ -- 1
-while$ -- 6
-width$ -- 4
-write$ -- 28
+while$ -- 12
+width$ -- 7
+write$ -- 53
 (There was 1 warning)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.11.24)  22 DEC 2015 18:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2015.11.24)  22 DEC 2015 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -289,32 +289,45 @@ File: images/sample_data.eps Graphic file (type eps)
 File: images/sample_events.eps Graphic file (type eps)
 
 <images/sample_events.eps>
+File: images/eeg_spatial.eps Graphic file (type eps)
+ <images/eeg_spatial.eps>
 File: images/multilabels.eps Graphic file (type eps)
- <images/multilabels.eps> [2] [3]
-(./ProjectReport.bbl
-Overfull \hbox (32.17976pt too wide) in paragraph at lines 8--10
+ <images/multilabels.eps>
+[2] [3] [4] [5] (./ProjectReport.bbl
+Underfull \hbox (badness 1603) in paragraph at lines 4--8
+[]\OT1/cmr/m/sc/9 Alexandre Barachant and Rafal Cy-con\OT1/cmr/m/n/9 , \OT1/cmr
+/m/it/9 Kag-gle - grasp and lift de-tec-tion\OT1/cmr/m/n/9 , Au-gust 2015.
+ []
+
+
+Overfull \hbox (32.17976pt too wide) in paragraph at lines 18--20
 []\OT1/cmr/m/sc/9 Kaggle Inc\OT1/cmr/m/n/9 , \OT1/cmr/m/it/9 The home of data s
 ci-ence\OT1/cmr/m/n/9 , June 2015.  [][][][][][]. 
  []
 
+
+Overfull \hbox (3.64017pt too wide) in paragraph at lines 28--32
+[][][][][][]\OT1/cmr/m/n/9 . 
+ []
+
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 172.
+ [6]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 172.
  (./ProjectReport.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 172.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 172.
 Package rerunfilecheck Info: File `ProjectReport.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 101.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 172.
  ) 
 Here is how much of TeX's memory you used:
- 5504 strings out of 493305
- 79200 string characters out of 6139896
- 169157 words of memory out of 5000000
- 8926 multiletter control sequences out of 15000+600000
+ 5510 strings out of 493305
+ 79324 string characters out of 6139896
+ 169342 words of memory out of 5000000
+ 8931 multiletter control sequences out of 15000+600000
  12513 words of font info for 45 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 36i,5n,27p,557b,352s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,5n,27p,557b,386s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on ProjectReport.dvi (4 pages, 20632 bytes).
+Output written on ProjectReport.dvi (6 pages, 34548 bytes).

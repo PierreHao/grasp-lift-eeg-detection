@@ -1,8 +1,18 @@
 \begin{thebibliography}{1}
 
+\bibitem{website:cat_dog_solution}
+{\sc Alexandre Barachant and Rafal Cycon}, {\em Kaggle - grasp and lift
+  detection}, August 2015.
+\newblock
+  \url{https://github.com/alexandrebarachant/Grasp-and-lift-EEG-challenge}.
+
 \bibitem{website:way_consoritum}
 {\sc Way Consoritum}, {\em Wearable interfaces for hand function recovery}.
 \newblock \url{http://www.wayproject.eu/}.
+
+\bibitem{website:nyuhpc}
+{\sc New York~University High Performance~Computing}.
+\newblock \url{http://hpc.nyu.edu}.
 
 \bibitem{website:kaggle-competition}
 {\sc Kaggle Inc}, {\em The home of data science}, June 2015.
@@ -13,5 +23,11 @@
   recordings during 3,936 grasp and lift trials with varying weight and
   friction},  (2014).
 \newblock \url{http://dx.doi.org/10.1038/sdata.2014.47}.
+
+\bibitem{website:attempt_2}
+{\sc Anirudhan~J Rajagopalan and Michele Ceru}, {\em Attempt 1 at running the
+  baseline}, September 2015.
+\newblock
+  \url{https://github.com/mc3784/Computational-Machine-Learning-/blob/master/baseline/level1.q}.
 
 \end{thebibliography}
