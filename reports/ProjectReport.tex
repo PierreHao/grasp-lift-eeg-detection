@@ -60,13 +60,13 @@ The sample dataset is included below for reference.
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=1\textwidth]{images/sample_data}
-  \caption{Sample Data format\label{fig:Sample_data}}
+  \caption{Sample Data format.  The columns correspond to id,Fp1,Fp2,F7,F3,Fz,F4,F8,FC5,FC1,FC2,FC6,T7,C3,Cz,C4,T8,TP9,CP5,CP1,CP2,CP6,TP10,P7,P3,Pz,P4,P8,PO9,O1,Oz,O2,PO10.\label{fig:Sample_data}}
 \end{figure}
 
 \begin{figure}[ht!]
   \centering
   \includegraphics[width=0.5\textwidth]{images/sample_events}
-  \caption{Sample Event format\label{fig:sample_events}}
+  \caption{Sample Event format. The columns correspond to id,HandStart,FirstDigitTouch,BothStartLoadPhase,LiftOff,Replace,BothReleased\label{fig:sample_events}}
 \end{figure}
 
 The event dataset will have a value of 1 corresponding to the event (stimulus) that is being performed at the instant of sampling.  There can be situations where there are multiple stimulus being triggered for the same EEG signal.  The objective is to classify (or) label the input EEG signals to the corresponding stimulus.
@@ -101,9 +101,9 @@ The constraint defined above simplifies our problem into a multiclass classifica
 
 \section{Baseline}
 \subsection{Choosing a baseline}
-We considered the models developed by Alexandre Barachant (a.k.a cat) and Rafal Cycon (a.k.a dog) for our baseline model (Cat \& Dot solution)\cite{website:cat_dog_solution}.  
+We considered the models developed by Alexandre Barachant (a.k.a cat) and Rafal Cycon (a.k.a Dog) for our baseline model (Cat \& Dog solution)\cite{website:cat_dog_solution}.  
 The solution by Cat and Dog won the first prize in the challenge and it makes logical sense to use that as our baseline.   
-The cat and dog solution has three levels of models.
+The cat and Dog solution has three levels of models.
 
 
 The first level of models uses 
@@ -115,12 +115,12 @@ The first level of models uses
 \end{enumerate}
 
 The solution uses an ensemble of multiple learning models such as Logistic Regression with LDA, Convolutional Neural Network, and Recurrent Neural Networks.  
-This model fits our requirement to be a baseline and hence we choose the Level-1 model of \textit{Cat and dog solution} as our baseline models.
+This model fits our requirement to be a baseline and hence we choose the Level-1 model of \textit{Cat and Dog solution} as our baseline models.
 We decided to compare the performance of the baselilne with respect to our own model.
 The accuracy achieved by the Level-1 models are not readily available.  So we tried to run the baseline to get the accuracy values.
 
 \subsection{Running the baseline}
-The hardware specs listed in the \textit{Cat and Dog solution} page details the hardware used and the time taken for the entire pipeline.  
+The hardware specs listed in the \textit{Cat and Dog solution} page, details the hardware used and the time taken for the entire pipeline.  
 Considering that we are using only the Level-1 models as our baseline, we decided to try running the baseline to get a accurate idea of time and performance for Level-1 alone.
 
 \subsubsection{Attempt 1}
@@ -151,7 +151,7 @@ Since running the baseline on HPC crashed and running the models on our local re
   \item We started out by trimming the input files from 18 series of GAL to just 6 series of GAL per subject.
   \item This corresponds to just \~4000 lines of samples per input file and we were able to load the data in our local effectively.
   \item We installed the exact version (including the minor versions) of almost all the packages specified in the baseline.
-  \item A few packages that were mentioned in the baseline were not available due to some mysterious reason and we had to install the previous version for these packages.
+  \item A few packages that were mentioned in the baseline were not available due to some unknown reason and we had to install the previous version for these packages.
   \item We ran the baseline with the subsample of the original dataset.
 \end{enumerate}
 
@@ -202,7 +202,7 @@ The plot generated for n\_components = 2 is shown as an example in Fig~\ref{fig:
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{images/cluster_centers}
-  \caption{Clustering the local descriptors of a single subject into 6 clusters.  Different clusters are represented by different colors.  The local descriptors that gives raise to a particular stimulus are denoted by different markers such as plus, star, circle, square and so on.  Just a cursory look on the clusters makes it clear that there data is not separable easily.\label{fig:local_descriptors_clusters}} 
+  \caption{Clustering the local descriptors of a single subject into 6 clusters.  Different clusters are represented by different colors.  The local descriptors that gives raise to a particular stimulus are denoted by different markers such as plus, star, circle, square and so on.  Just a cursory look on the clusters makes it clear that the data is not separable easily.\label{fig:local_descriptors_clusters}} 
 \end{figure}
 
 \subsubsection{Variance of local descripitors}
@@ -221,7 +221,7 @@ The variance curve is as shown in Fig~\ref{fig:ld_variance}
 The analysis of variance was actually performed after we got the results for BOF and Vlad models.  This makes us wonder whether the model's performance might have increased if we had used PCA on the local descriptors before applying our models.
 
 \subsection{Building Bag of Words model}
-\subsubsection{Theorey}
+\subsubsection{Theory}
 Bag of words feature representation is a way of representing a sample that can be separated into its local descriptors.  
 We learn the vocabulary of the dataset using Kmeans with different cluster sizes.
 The vocabulary for a learning problem is the cluster centroids found by Kmeans.
@@ -244,7 +244,7 @@ Thus we get the BOW representation by the simple formula
 
 \subsubsection{Implementation}
 The code for this project is developed using Scikit-Learn\cite{website:sklearn}.  So we wanted to build an implementation that fits well into scikit-learn's pipelines.
-Any component can be duck typed to fit into scikit-learn's pipeline if it has fit, transform, set\_params and get\_params methods.  A breif explanation of the methods and its functions is discussed below.
+Any component can be duck typed to fit into scikit-learn's pipeline if it has fit, transform, set\_params and get\_params methods.  A brief explanation of the methods and its functions is discussed below.
 \begin{description}
   \item{def fit (X, Y=None)}  This function is used to learn the parameters from the distribution of the training set and apply the parameters on training and test set.  In our BOW case, this involves learning the vocabulary of the local descriptors.
   \item{def transform (X)}  This function transforms the training/test input by using the vocabulary learnt during the fit method.  In BOW implementation a sample containing a list of local descriptors is transformed into a vector of dimension K (cluster size).
@@ -257,23 +257,23 @@ We try to understand the performance of our Bag of Words implementation by plott
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/bofwTimeFixedCluster}
-  \caption{Bag of Words feature representation: Runtime with fixed cluster size. (Cluster size in $\log_{2}$).\label{fig:bowf_time_fixed_cluster}}
+  \caption{Bag of Words feature representation: Runtime with fixed cluster size. (Cluster size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:bowf_time_fixed_cluster}}
 \end{figure}
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/bofwMemoryFixedCluster}
-  \caption{Bag of Words feature representation: Memory usage with fixed cluster size. (Cluster size in $\log_{2}$)\label{fig:bowf_memory_fixed_cluster}}
+  \caption{Bag of Words feature representation: Memory usage with fixed cluster size. (Cluster size in $\log_{2}$). The experiments are run on the actual project dataset.\label{fig:bowf_memory_fixed_cluster}}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/bofwTimeFixedSample}
-  \caption{Bag of Words feature representation: Runtime with fixed sample size. (Sample size in $\log_{2}$).\label{fig:bowf_time_fixed_sample}}
+  \caption{Bag of Words feature representation: Runtime with fixed sample size. (Sample size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:bowf_time_fixed_sample}}
 \end{figure}
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/bofwMemoryFixedSample}
-  \caption{Bag of Words feature representation: Memory usage with fixed sample size. (Sample size in $\log_{2}$)\label{fig:bowf_memory_fixed_sample}}
+  \caption{Bag of Words feature representation: Memory usage with fixed sample size. (Sample size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:bowf_memory_fixed_sample}}
 \end{figure}
 
 \subsubsection{Variance Analysis}
@@ -287,7 +287,7 @@ We analyze the variance of the Bag of Words representation on a subsample to get
 
 \subsection{Building Vlad model}
 
-\subsubsection{Theorey}
+\subsubsection{Theory}
 Vector of locally aggregated descriptors is a model similar to the Bag of Words model.  
 The main difference between BOW and Vlad is that, Vlad takes into account the spread of the information along with the count of local descriptors belonging to a particular centroid.
 The vlad representation of a sample with local descriptors of size D and centers K will be given by a matrix of size $K x D $.  Thus a Vlad representation would be able to reperesent more information about the domain than what is capable with a Bow model.
@@ -324,23 +324,23 @@ We try to understand the performance of our Vlad implementation by plotting the 
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/vladTimeFixedCluster}
-  \caption{Vlad feature representation: Runtime with fixed cluster size. (Cluster size in $\log_{2}$).\label{fig:vlad_time_fixed_cluster}}
+  \caption{Vlad feature representation: Runtime with fixed cluster size. (Cluster size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:vlad_time_fixed_cluster}}
 \end{figure}
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/vladMemoryFixedCluster}
-  \caption{Vlad feature representation: Memory usage with fixed cluster size. (Cluster size in $\log_{2}$)\label{fig:vlad_memory_fixed_cluster}}
+  \caption{Vlad feature representation: Memory usage with fixed cluster size. (Cluster size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:vlad_memory_fixed_cluster}}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/vladTimeFixedSample}
-  \caption{Vlad feature representation: Runtime with fixed sample size. (Sample size in $\log_{2}$).\label{fig:vlad_time_fixed_sample}}
+  \caption{Vlad feature representation: Runtime with fixed sample size. (Sample size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:vlad_time_fixed_sample}}
 \end{figure}
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/vladMemoryFixedSample}
-  \caption{Vlad feature representation: Memory usage with fixed sample size. (Sample size in $\log_{2}$)\label{fig:vlad_memory_fixed_sample}}
+  \caption{Vlad feature representation: Memory usage with fixed sample size. (Sample size in $\log_{2}$).  The experiments are run on the actual project dataset.\label{fig:vlad_memory_fixed_sample}}
 \end{figure}
 
 \subsubsection{Variance Analysis}
@@ -353,7 +353,7 @@ We analyze the variance of the Vlad representation on a subsample to get an idea
 
 
 \subsection{Building OnlineMiniBatchKMeans model}
-\subsubsection{Theorey}
+\subsubsection{Theory}
 Online Kmeans is a version of the unsupervised KMeans algorithm for clustering huge amount of samples\cite{art:online_kmeans}.  It works similar to Stohastic Gradient Descent but takes batches of samples drawn randomly from the original sample distribution and running KMeans on the subsample.
 It is shown that OnlineKMeans has performance comparable to that of KMeans but converges very faster than the originl KMeans algorithm.
 \subsubsection{Implementation}
@@ -365,12 +365,12 @@ Fig~\ref{fig:kmeans_memory} and Fig~\ref{fig:kmeans_time} show the memory and ti
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{images/kmeans_memory}
-  \caption{Memory usage comparision between custom implementation of KMeans and Scikit-Learn's KMeans algorithm.\label{fig:kmeans_memory}} 
+  \caption{Memory usage comparision between custom implementation of KMeans and Scikit-Learn's KMeans algorithm.  Samples are in $\log_{2}$\label{fig:kmeans_memory}} 
 \end{figure}
 \begin{figure}
   \centering
   \includegraphics[width=0.75\textwidth]{images/kmeans_time}
-  \caption{Runtime comparision between custom implementation of KMeans and Scikit-learn's KMeans algorithm\label{fig:kmeans_time}} 
+  \caption{Runtime comparision between custom implementation of KMeans and Scikit-learn's KMeans algorithm.  Samples are in $\log_{2}$\label{fig:kmeans_time}} 
 \end{figure}
 
 \subsection{Putting it all together as a pipeline}
@@ -435,7 +435,7 @@ Note that the accuracy in the plot is with respect to the misclassification erro
 A sample run of the cross validation with top ten scores is shown in Table~\ref{2compTable}
 \begin{table}[]\label{2compTable}
 \centering
-\caption{Bag of words score for n component$=2$}
+\caption{Bag of words score for xDawn num\_component$=2$}
 \label{2comp}
 \begin{tabular}{lllll}
   C      &    K &    Score &       Time \\  
@@ -455,13 +455,13 @@ A sample run of the cross validation with top ten scores is shown in Table~\ref{
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/score2Components}
-  \caption{The C vs score plot for Linear Bow features. When n\_components = 2.\label{fig:bowf_score2}}
+  \caption{The C vs score plot for Linear Bow features. When n\_components = 2.  The maximum score is obtained for C=4.\label{fig:bowf_score2}}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/score3Components}
-  \caption{The C vs score plot for Linear Bow feature When n\_components = 3.\label{fig:bowf_score3}}
+  \caption{The C vs score plot for Linear Bow feature When n\_components = 3.  For K=2048, the computation became intractable.  So we dont have any datapoint for K=2048 and $C=2^{4}$\label{fig:bowf_score3}}
 \end{figure}
 
 \subsection{Performance}
@@ -469,13 +469,13 @@ The plots Fig~\ref{fig:bowf_time2} and Fig~\ref{fig:bowf_time3} shows the time u
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/time2Components}
-  \caption{The C vs time plot for Linear Bow features. When n\_components = 2.\label{fig:bowf_time2}}
+  \caption{The C vs time plot for Linear Bow features. When n\_components = 2.  The jump for K=1024 after log2(C)=2 made us curious.  We are not exactly sure about what causes the jump.\label{fig:bowf_time2}}
 \end{figure}
 
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/time3Components}
-  \caption{The C vs time plot for Linear Bow feature When n\_components = 3.\label{fig:bowf_time3}}
+  \caption{The C vs time plot for Linear Bow feature When n\_components = 3.  We were unable to get a datpoint for K=2048 and log2(C)=4 as the computation took more than 30 hours and still didn't finish.\label{fig:bowf_time3}}
 \end{figure}
 
 
@@ -496,7 +496,8 @@ Performing grid search on the number of reduced components such that the varianc
 
 Also, we were unable to run our experiments to get a peak in the plots for all the hyperparameters.  
 The performance was increasing for values of K=2048 and C=16.  
-But we couldn't run it more as the jobs were taking more than 30 hours.  A considerable time should be spent to optimize the Vlad/Bowf implementation further before running the implementation.
+But we were unable to run more number of jobs as the jobs were taking more than 30 hours.  
+A considerable time should be spent to optimize the Vlad/Bowf implementation further before running the implementation.
 
 
 \subsection{Process}
