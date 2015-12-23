@@ -35,6 +35,10 @@
 \newblock
   \url{https://lear.inrialpes.fr/pubs/2010/JDSP10/jegou_compactimagerepresentation.pdf}.
 
+\bibitem{website:sklearn}
+{\sc Scikit Learn}, {\em Machine learning in python}.
+\newblock \url{http://scikit-learn.org/stable/}.
+
 \bibitem{naturegal}
 {\sc Matthew~D Luciw, Ewa Jarocka, and Benoni~B Edin}, {\em Multi-channel eeg
   recordings during 3,936 grasp and lift trials with varying weight and

@@ -220,6 +220,102 @@ The variance curve is as shown in Fig~\ref{fig:ld_variance}
 
 The analysis of variance was actually performed after we got the results for BOF and Vlad models.  This makes us wonder whether the model's performance might have increased if we had used PCA on the local descriptors before applying our models.
 
+\subsection{Building Bag of Words model}
+\subsubsection{Theorey}
+Bag of words feature representation is a way of representing a sample that can be separated into its local descriptors.  
+We learn the vocabulary of the dataset using Kmeans with different cluster sizes.
+The vocabulary for a learning problem is the cluster centroids found by Kmeans.
+We process our data again to find how many local descriptors belong to a particular centroid.
+By belong, we denote the centroid that is closest to a particular local descriptor of a sample.
+The sample can then be represented as a vector of dimension equal to the cluster size K with the magnitude of each dimension equal to the number of local descriptors belonging to that particular centroid.
+
+\subsubsection{Algorithm}
+The following algorithm enumerates the steps for finding the Bow representation of a sample.
+\begin{enumerate}
+  \item Learn the Codebook $ C = \{c_{1}, c_{2} \ldots c_{k}\} $ of words representing the vocabulary of the domain.
+  \item Assign the vocabulary for every local descriptor by $ c_{i} = NN(x) $.
+  \item The bow representation is given by the sum of local descriptors belonging to a particular word $ c_{i} $.
+\end{enumerate}
+
+Thus we get the BOW representation by the simple formula
+\begin{align*}
+  B_{j} = \sum_{x \mid NN(x) = c_{j};  \forall j \in K} 1
+\end{align*}
+
+\subsubsection{Implementation}
+The code for this project is developed using Scikit-Learn\cite{website:sklearn}.  So we wanted to build an implementation that fits well into scikit-learn's pipelines.
+Any component can be duck typed to fit into scikit-learn's pipeline if it has fit, transform, set\_params and get\_params methods.  A breif explanation of the methods and its functions is discussed below.
+\begin{description}
+  \item{def fit (X, Y=None)}  This function is used to learn the parameters from the distribution of the training set and apply the parameters on training and test set.  In our BOW case, this involves learning the vocabulary of the local descriptors.
+  \item{def transform (X)}  This function transforms the training/test input by using the vocabulary learnt during the fit method.  In BOW implementation a sample containing a list of local descriptors is transformed into a vector of dimension K (cluster size).
+  \item{def set\_params (**params)} Used to set the parameters for grid search.
+  \item{def get\_params (deep=True)} Used to get the current parameters.
+\end{description}
+
+\subsubsection{Performance}
+\subsubsection{Variance Analysis}
+We analyze the variance of the Bag of Words representation on a subsample to get an idea of the number of components to use in the downstream pipeline.  A plot of the component vs its variance is displayed in Fig~\ref{fig:bowf_variance}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{images/bowf_variance}
+  \caption{Explained variance ratio of Bag of Feature representation for a subsample (Subject 1).  We get variance measures of 99, 95, 90, 77, 65 and 50 for components 649, 507, 442, 336, 263, 186 respectively.\label{fig:bowf_variance}} 
+\end{figure}
+
+
+\subsection{Building Vlad model}
+
+\subsubsection{Theorey}
+Vector of locally aggregated descriptors is a model similar to the Bag of Words model.  
+The main difference between BOW and Vlad is that, Vlad takes into account the spread of the information along with the count of local descriptors belonging to a particular centroid.
+The vlad representation of a sample with local descriptors of size D and centers K will be given by a matrix of size $K x D $.  Thus a Vlad representation would be able to reperesent more information about the domain than what is capable with a Bow model.
+
+\subsubsection{Algorithm}
+The following algorithm enumerates the steps for finding the Vlad representation for a sample with local descriptors.
+\begin{enumerate}
+  \item Learn the Codebook $ C = \{c_{1}, c_{2} \ldots c_{k}\} $ of words representing the vocabulary of the domain.
+  \item Assign the vocabulary for every local descriptor by $ c_{i} = NN(x) $.
+  \item The Vlad representation is given by difference $ x - c_{i} $ of the vectors assigned to a particular vocabulary $ c_{i} $.
+  \item L2 Normalize the above representation and concatenate the rows to form a vector.
+\end{enumerate}
+
+Thus we get the Vlad representation by the simple formula
+\begin{align*}
+  V_{i,j} = \sum_{x \mid NN(x) = c_{j}} (x_{j} - c_{i, j})
+\end{align*}
+where $x_{j}$ and $c_{i,j}$ represent the $j^{th}$ component of the descriptor $x$ considered and of its corresponding word $c_{i}$
+
+Thus the Vlad representation of a sample with local desccriptors of dimension D and centers K is given by $ K \times D $.
+After concatenating the rows into columns we get a vector of size given by the product of K and D.
+
+\subsubsection{Implementation}
+As discussed in the Bag of Words section, since we are using scikit-learn's pipelines, we want to build an implementation that plays nice with scikit learn.  We implemented the fit, transform, set\_params and get\_params method in our vlad implementation.  A brief descripton of the functions and its operations:
+\begin{description}
+  \item{def fit (X, Y=None)}  For Vlad implementation: learn the vocabulary of the local descriptors.
+  \item{def transform (X)}  Transform a sample containing a list of local descriptors into a vector of dimension K x D (product of cluster size and dimension of local descriptors).
+  \item{def set\_params (**params)} Used to set the parameters for grid search.
+  \item{def get\_params (deep=True)} Used to get the current parameters.
+\end{description}
+
+\subsubsection{Performance}
+
+\subsubsection{Variance Analysis}
+We analyze the variance of the Vlad representation on a subsample to get an idea of the number of components to use in the downstream pipeline.  A plot of the component vs its variance is displayed in Fig~\ref{fig:vlad_variance}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{images/vlad_variance}
+  \caption{Explained variance ratio of Vlad representation for a subsample (Subject 1).  We get variance measures of 99, 95, 90, 77, 65 and 50 for components 994, 807, 780, 478, 353, 232 respectively.\label{fig:vlad_variance}} 
+\end{figure}
+
+
+\subsection{Building OnlineMiniBatchKMeans model}
+\subsubsection{Theorey}
+\subsubsection{Algorithm}
+\subsubsection{Implementation}
+\subsubsection{Performance}
+\subsubsection{Variance Analysis}
+\subsection{Putting it all together}
+\subsection{HyperParameters}
+
 \newpage
 
 \bibliographystyle{siam}
