@@ -361,6 +361,17 @@ We implemented online kmeans as a component that plays nice with scikit-learn's 
 \subsubsection{Performance Optimizations}
 We used convergence factor similar to the one used in Scikit-learn's OnlineKMeans to make sure that our algorithm finishes faster.  The performance of our algorithm is very much similar to that of scikit-learn's implementation till sample size --- $2^{17}$ and number of cluster $K = 2^{9}$.
 However, since the performance of our pipeline was the best when the cluster size was 1024 or 2048, we are using the Scikit-Learn's implementation in our final version of our code.
+Fig~\ref{fig:kmeans_memory} and Fig~\ref{fig:kmeans_time} show the memory and time comparision with respect to scikit-learn.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{images/kmeans_memory}
+  \caption{Memory usage comparision between custom implementation of KMeans and Scikit-Learn's KMeans algorithm.\label{fig:kmeans_memory}} 
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{images/kmeans_time}
+  \caption{Runtime comparision between custom implementation of KMeans and Scikit-learn's KMeans algorithm\label{fig:kmeans_time}} 
+\end{figure}
 
 \subsection{Putting it all together as a pipeline}
 We finally built our pipeline using the following components
@@ -395,13 +406,12 @@ We ran exhaustive grid search for values of C and Gamma ranging from $2^{-4}$ to
 \section{Results and Analysis}
 This section contains the results and analysis of our results.  We will plot the results for a few cases of grid search, performance, and accuracy score.
 \subsection{Best Performance}
-We got the best performance of 0.52 misclassification score for parameters
+We got the best performance of 0.52 misclassification score with Linear SVM and Bowf representation for parameters
 \begin{enumerate}
-  \item  xDawn --- num\_component = 
-  \item  vlad --- Cluster size (K) = 
-  \item  Bowf --- Cluster size (K) = 
-  \item  classifier --- (Linear / Gaussian)
-  \item  Classifier parameters --- C, Gamma
+  \item  xDawn --- num\_component = 2
+  \item  Bowf --- Cluster size (K) = 2048
+  \item  classifier --- LinearSVM
+  \item  Classifier parameters --- C = 16.000
 \end{enumerate}
 
 \subsection{ROC curves}
@@ -419,7 +429,29 @@ Fig~\ref{fig:roc_hpc} and Fig~\ref{fig:roc_mean} shows the mean ROC curve and ac
 \end{figure}
 
 \subsection{Grid Search}
-The plots Fig~\ref{fig:bowf_score2} and Fig~\ref{fig:bowf_score3} shows the accuracy of the cross validation scripts with respect to C values.  Note that the accuracy in the plot is with respect to the misclassification error and not the Area Under the Curve.
+The plots Fig~\ref{fig:bowf_score2} and Fig~\ref{fig:bowf_score3} shows the accuracy of the cross validation scripts with respect to C values.  
+Note that the accuracy in the plot is with respect to the misclassification error and not the Area Under the Curve.
+
+A sample run of the cross validation with top ten scores is shown in Table~\ref{2compTable}
+\begin{table}[]\label{2compTable}
+\centering
+\caption{Bag of words score for n component$=2$}
+\label{2comp}
+\begin{tabular}{lllll}
+  C      &    K &    Score &       Time \\  
+16.0000 & 2048 & 0.531901 & 317.500000  \\
+8.0000  & 2048 & 0.530237 & 196.500000  \\                                                                            
+4.0000  & 2048 & 0.516204 & 173.500000  \\                                                                            
+2.0000  & 2048 & 0.501374 & 132.000000  \\  
+1.0000  & 2048 & 0.491392 &  95.733333  \\                                                                            
+0.5000  & 2048 & 0.474392 &  84.800000  \\                                                                            
+0.2500  & 2048 & 0.461661 &  59.866667  \\                                                                            
+0.1250  & 2048 & 0.442564 &  67.966667  \\                                                                            
+0.0625  & 2048 & 0.430555 &  48.066667  \\                                                                            
+16.0000 & 1024 & 0.358941 & 475.833333  \\                                                                            
+\end{tabular}
+\end{table}
+
 \begin{figure}
   \centering
   \includegraphics[width=0.60\linewidth]{images/score2Components}
@@ -461,6 +493,10 @@ The models used in this project should give a much better performance if proper 
 Though we did a grid search on a number of parameters such as C, Gamma, num\_components, and K\@; we didn't do grid search on the dimensionality reduction.  
 This was based on the assumption that for best results the reduced data should still hold the maximum amount of variance.
 Performing grid search on the number of reduced components such that the variance is at 50, 65, 77, 90, 95 and 99 percentile of the orignal variancce would have given better results.
+
+Also, we were unable to run our experiments to get a peak in the plots for all the hyperparameters.  
+The performance was increasing for values of K=2048 and C=16.  
+But we couldn't run it more as the jobs were taking more than 30 hours.  A considerable time should be spent to optimize the Vlad/Bowf implementation further before running the implementation.
 
 
 \subsection{Process}
