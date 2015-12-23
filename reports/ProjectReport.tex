@@ -392,7 +392,60 @@ We reduced the dimension of the feature set to 90\% of the explained variance of
 \subsubsection{LinearSVM and GaussianSVM}
 We ran exhaustive grid search for values of C and Gamma ranging from $2^{-4}$ to $2^{4}$.
 
-\section{Results}
+\section{Results and Analysis}
+This section contains the results and analysis of our results.  We will plot the results for a few cases of grid search, performance, and accuracy score.
+\subsection{Best Performance}
+We got the best performance of 0.52 misclassification score for parameters
+\begin{enumerate}
+  \item  xDawn --- num\_component = 
+  \item  vlad --- Cluster size (K) = 
+  \item  Bowf --- Cluster size (K) = 
+  \item  classifier --- (Linear / Gaussian)
+  \item  Classifier parameters --- C, Gamma
+\end{enumerate}
+
+\subsection{ROC curves}
+The performance criteria we used is the mean ROC curve.  
+Fig~\ref{fig:roc_hpc} and Fig~\ref{fig:roc_mean} shows the mean ROC curve and actual ROC curve for all the stimulus.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/ROC6Partials}
+  \caption{ROC Partials (n\_components=2,C=4,n\_culter=2**8).\label{fig:roc_hpc}}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/ROCMean}
+  \caption{Mean ROC curve (n\_components=2,C=4,n\_culter=2**8).\label{fig:roc_mean}}
+\end{figure}
+
+\subsection{Grid Search}
+The plots Fig~\ref{fig:bowf_score2} and Fig~\ref{fig:bowf_score3} shows the accuracy of the cross validation scripts with respect to C values.  Note that the accuracy in the plot is with respect to the misclassification error and not the Area Under the Curve.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/score2Components}
+  \caption{The C vs score plot for Linear Bow features. When n\_components = 2.\label{fig:bowf_score2}}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/score3Components}
+  \caption{The C vs score plot for Linear Bow feature When n\_components = 3.\label{fig:bowf_score3}}
+\end{figure}
+
+\subsection{Performance}
+The plots Fig~\ref{fig:bowf_time2} and Fig~\ref{fig:bowf_time3} shows the time usage of the cross validation scripts with respect to C values.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/time2Components}
+  \caption{The C vs time plot for Linear Bow features. When n\_components = 2.\label{fig:bowf_time2}}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/time3Components}
+  \caption{The C vs time plot for Linear Bow feature When n\_components = 3.\label{fig:bowf_time3}}
+\end{figure}
+
 
 \section{Future work and Potential Improvements}
 \subsection{Feature Selection}
@@ -429,6 +482,8 @@ The huge size of the dataset requires that we use systems with high capacity.  A
   \item{Runtime:} Minimum 24 hours.  (Jobs with >= 2048 clusters got killed even after 30 hours.)
   \item{GPU:} None
 \end{description}
+
+\section{Conclusion}
 
 \newpage
 
