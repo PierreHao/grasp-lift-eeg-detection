@@ -1,0 +1,40 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 - figure_1.png roc curve for one subject\
+\
+-gaussian_BOFW_3components: contains the score and time for the run on hpc of gaussian bofw with 3 components\
+\
+-linear_BOFW_2components:   contains the score and time for the run on hpc of linear bofw with 3 components. And it also contains the details of the single clusters. Any plot contains the three run that the grid search does for each value of the parameters and the mean value.\
+\
+-linear_BOFW_3components: score and time for linear bofw with n_components=3\
+\
+-linear_VLAD_2components: score and time for linear VLAD with n_components=2\
+\
+-MemoryTimeUsageBOFW: For plots with the memory and time for bofw:\
+1) bofwMemoryFixedCluster.pdf: fixing the number of cluster to k=1024 it plot the memory usage for three sample size 2**15,2**17,2**19\
+2)bofwTimeFixedCluster.pdf: time usage for the same data.\
+\
+3)bofwMemoryFixedSample.pdf: fixed the number of sample to 2**11 it plots the memory usage varying the number of the cluster k=2**8,2**9,2**10\
+\
+4) bofwTimeFixedSample.pdf: time usage for the same data\
+\
+-MemoryTimeUsageVLAD: contains three plot as the one described before \
+\
+5) oneSubjectAUC.png: old plot\'85 don\'92t think is needed\
+6) oneSubjectAUCC16.png\
+7) oneSubjectROCcurves:  \
+ConfusionMatrix.rtf: confusion matrix for one subject\
+ROCAverange.png: roc curve average on the 6 label for just one subject (sun locally).\
+ROC6.png: the 6 roc curve (for a single subject run locally)   \
+\
+8) ROC6ForOneSubject.png. extra plot for roc curve one subject local.\
+\
+9) ROCcurveHPC: same roc curve but on HPC with all subjects. n_components=2,C=4,n_culter=2**8\
+\
+\
+\
+The remaining plots are just copy of the previous one for a different run. Don\'92t think they are useful. }
