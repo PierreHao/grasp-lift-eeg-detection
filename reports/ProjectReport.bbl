@@ -1,4 +1,10 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{art:all_about_vlad}
+{\sc Relja Arandjeloc and Andrew Zisserman}, {\em All about vlad}, CVPR 2013,
+  (2013).
+\newblock
+  \url{https://courses.cs.washington.edu/courses/cse590v/13au/arandjelovic13.pdf}.
 
 \bibitem{website:cat_dog_solution}
 {\sc Alexandre Barachant and Rafal Cycon}, {\em Kaggle - grasp and lift
@@ -10,6 +16,10 @@
 {\sc Way Consoritum}, {\em Wearable interfaces for hand function recovery}.
 \newblock \url{http://www.wayproject.eu/}.
 
+\bibitem{website:mne_python}
+{\sc Mne Developers}, {\em Mne --- meg \& eeg analysis \& visualisations}.
+\newblock \url{http://mne-tools.github.io/stable/python_reference.html}.
+
 \bibitem{website:nyuhpc}
 {\sc New York~University High Performance~Computing}.
 \newblock \url{http://hpc.nyu.edu}.
@@ -18,10 +28,17 @@
 {\sc Kaggle Inc}, {\em The home of data science}, June 2015.
 \newblock \url{https://www.kaggle.com/c/grasp-and-lift-eeg-detection}.
 
+\bibitem{art:vlad_aggregate_paper}
+{\sc Herve Jegou, Matthijs Douze, Cordelia Schmid, and Patrick Perez}, {\em
+  Aggregating local descriptors into a compact image representation}, CVPR
+  2010,  (2010).
+\newblock
+  \url{https://lear.inrialpes.fr/pubs/2010/JDSP10/jegou_compactimagerepresentation.pdf}.
+
 \bibitem{naturegal}
 {\sc Matthew~D Luciw, Ewa Jarocka, and Benoni~B Edin}, {\em Multi-channel eeg
   recordings during 3,936 grasp and lift trials with varying weight and
-  friction},  (2014).
+  friction}, Scientific Data,  (2014).
 \newblock \url{http://dx.doi.org/10.1038/sdata.2014.47}.
 
 \bibitem{website:attempt_2}
@@ -29,5 +46,12 @@
   baseline}, September 2015.
 \newblock
   \url{https://github.com/mc3784/Computational-Machine-Learning-/blob/master/baseline/level1.q}.
+
+\bibitem{art:Xdawn_filter}
+{\sc B.~Rivet, A.~Souloumiac, V.~Attina, and G.~Gibert}, {\em xdawn algorithm
+  to enhance evoked potentials: Application to brain computer interface},
+  Biomedical Engineering, IEEE Transactions on, 56 (2009), pp.~2035--2043.
+\newblock
+  \url{http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=4760273}.
 
 \end{thebibliography}

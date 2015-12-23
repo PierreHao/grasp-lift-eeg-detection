@@ -8,3 +8,5 @@ __pycache__
 *.o*
 *.swo
 .DS_Store
+*.log
+*.idx

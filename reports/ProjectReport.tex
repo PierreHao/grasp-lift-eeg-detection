@@ -163,6 +163,62 @@ As discussed above, since we couldn't get the baseline running even after 3 atte
 
 The attempt to run the baseline gave us significant insights into the Domain, data and assumptions that can be used for solving the problem.
 
+\section{Building our own Pipeline}
+
+\subsection{Understanding the domain}
+The biggest challenge for building the pipeline was to understand the domain and figure out the preprocessing tasks.  
+The components downstream the pipeline was already fixed to be VLAD\cite{art:vlad_aggregate_paper}\cite{art:all_about_vlad}  and Bag of Features.
+After a bit of exploring and a bit of guidance from our professor we decided to use MNE\cite{website:mne_python} for the data preprocessing.  MNE provided us with a number of tools for preprocessing the data.
+\begin{enumerate}
+  \item Epochs
+  \item Covariance measures
+  \item XDawn filter\cite{art:Xdawn_filter}
+  \item Algorithms to process the raw data and generate the Event Related Potentials.
+\end{enumerate}
+We made good and extensive use of the codebase of \textit{Cat and Dog} solution to understand the type of preprocessing that was carried out by them.  
+We also went through the forum of the Kaggle challenge to gather insight about the domain and ways of processing the data.
+
+
+\subsection{Data Preprocessing}
+
+We used MNE to consume the raw data in csv format to find the epoch values and the Event Related Potentials.  
+We also use MNE to get the covariance matrix on the complete training/test dataset.  
+This information is then fed to xDawn filter with WINDOW size as 500.  
+The value of the parameter num\_components for xDawn, which determines the number of features in the processed data was varied from 2 to 4 and the resulting three dimensional array was saved in numpy binary formats.
+
+The total run time for data preprocessing took around an hour for the dataset.
+
+\subsection{Exploring the preprocessed data}
+We then set out to explore the processed data to better understand the dataset.
+\subsubsection{Clustering of local descriptors}
+The total number of stimulus that has to be classified is six.  
+Any classification task becomes easier if we find that the data is separable by some degree.  
+Since our model essentially depends on builing over the clusters formed by local descriptors, we decided to cluster the data to find if there is any amount of separatbility of data.
+
+We ran experiments to cluster the local descriptors for one subject (Subject 1 in the dataset) using MiniBatchKMeans algorithm.  
+We then used the cluster information and different markers to plot the cluster information on a two dimensional plot by reducing the dimensionality.
+The plot generated for n\_components = 2 is shown as an example in Fig~\ref{fig:local_descriptors_clusters}.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{images/cluster_centers}
+  \caption{Clustering the local descriptors of a single subject into 6 clusters.  Different clusters are represented by different colors.  The local descriptors that gives raise to a particular stimulus are denoted by different markers such as plus, star, circle, square and so on.  Just a cursory look on the clusters makes it clear that there data is not separable easily.\label{fig:local_descriptors_clusters}} 
+\end{figure}
+
+\subsubsection{Variance of local descripitors}
+PCA is a technique for dimensionality reduction.  
+It works by finding components that provide the maximum variance (It can be thought of as the direciton in which the features spread out the most).
+Finding the variance of the features helps us to understand how the data is spread and how much dimensions we should use to tackle the learning problem.  
+We created a plot of the variance of a the local descriptors for a subsample of the dataset (Subject 1).  
+The variance curve is as shown in Fig~\ref{fig:ld_variance}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.75\textwidth]{images/ld_variance}
+  \caption{Explained variance ratio of local descriptors for a subsample (Subject 1).  We get variance measures of 99, 95, 90, 77, 65 and 50 for components 29, 21, 16, 7, 4, 2 respectively.\label{fig:ld_variance}} 
+\end{figure}
+
+The analysis of variance was actually performed after we got the results for BOF and Vlad models.  This makes us wonder whether the model's performance might have increased if we had used PCA on the local descriptors before applying our models.
 
 \newpage
 
