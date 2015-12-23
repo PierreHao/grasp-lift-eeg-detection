@@ -253,6 +253,29 @@ Any component can be duck typed to fit into scikit-learn's pipeline if it has fi
 \end{description}
 
 \subsubsection{Performance}
+We try to understand the performance of our Bag of Words implementation by plotting the runtime and memory usage against a fixed number of clustersFig~\ref{fig:bowf_time_fixed_cluster},~\ref{fig:bowf_memory_fixed_cluster} and also against fixed sample sizes. Refer Fig~\ref{fig:bowf_time_fixed_sample},~\ref{fig:bowf_memory_fixed_sample}.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/bofwTimeFixedCluster}
+  \caption{Bag of Words feature representation: Runtime with fixed cluster size. (Cluster size in $\log_{2}$).\label{fig:bowf_time_fixed_cluster}}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/bofwMemoryFixedCluster}
+  \caption{Bag of Words feature representation: Memory usage with fixed cluster size. (Cluster size in $\log_{2}$)\label{fig:bowf_memory_fixed_cluster}}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/bofwTimeFixedSample}
+  \caption{Bag of Words feature representation: Runtime with fixed sample size. (Sample size in $\log_{2}$).\label{fig:bowf_time_fixed_sample}}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/bofwMemoryFixedSample}
+  \caption{Bag of Words feature representation: Memory usage with fixed sample size. (Sample size in $\log_{2}$)\label{fig:bowf_memory_fixed_sample}}
+\end{figure}
+
 \subsubsection{Variance Analysis}
 We analyze the variance of the Bag of Words representation on a subsample to get an idea of the number of components to use in the downstream pipeline.  A plot of the component vs its variance is displayed in Fig~\ref{fig:bowf_variance}
 \begin{figure}
@@ -297,6 +320,28 @@ As discussed in the Bag of Words section, since we are using scikit-learn's pipe
 \end{description}
 
 \subsubsection{Performance}
+We try to understand the performance of our Vlad implementation by plotting the runtime and memory usage against a fixed number of clusters.  Fig~\ref{fig:vlad_time_fixed_cluster},~\ref{fig:vlad_memory_fixed_cluster} and also against fixed sample sizes. Refer Fig~\ref{fig:vlad_time_fixed_sample},~\ref{fig:vlad_memory_fixed_sample}.
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/vladTimeFixedCluster}
+  \caption{Vlad feature representation: Runtime with fixed cluster size. (Cluster size in $\log_{2}$).\label{fig:vlad_time_fixed_cluster}}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/vladMemoryFixedCluster}
+  \caption{Vlad feature representation: Memory usage with fixed cluster size. (Cluster size in $\log_{2}$)\label{fig:vlad_memory_fixed_cluster}}
+\end{figure}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/vladTimeFixedSample}
+  \caption{Vlad feature representation: Runtime with fixed sample size. (Sample size in $\log_{2}$).\label{fig:vlad_time_fixed_sample}}
+\end{figure}
+\begin{figure}
+  \centering
+  \includegraphics[width=0.60\linewidth]{images/vladMemoryFixedSample}
+  \caption{Vlad feature representation: Memory usage with fixed sample size. (Sample size in $\log_{2}$)\label{fig:vlad_memory_fixed_sample}}
+\end{figure}
 
 \subsubsection{Variance Analysis}
 We analyze the variance of the Vlad representation on a subsample to get an idea of the number of components to use in the downstream pipeline.  A plot of the component vs its variance is displayed in Fig~\ref{fig:vlad_variance}
