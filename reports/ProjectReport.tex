@@ -73,6 +73,14 @@ The event dataset will have a value of 1 corresponding to the event (stimulus) t
 
 The total number of samples across the complete dataset is 17985850.
 
+The spatial relationship between each of the 32 electrodes is given by Fig.~\ref{fig:eeg_spatial_relation}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=0.5\textwidth]{images/eeg_spatial}
+  \caption{Spatial relationship between 32 electrodes.\label{fig:eeg_spatial_relation}} 
+\end{figure}
+
 \subsection{Multilabeling or Multiclass classification}
 The dataset can have multiple stimulus at the same time as shown in figure~\ref{fig:label_or_class}.
 This is an important feature to consider as it forms the distinction between multiclass and multilabel classification problem.
@@ -93,12 +101,68 @@ The constraint defined above simplifies our problem into a multiclass classifica
 
 \section{Baseline}
 \subsection{Choosing a baseline}
-We considered the models (Cat and Dog solution) developed by Alexandre Barachant (a.k.a cat) and Rafal Cycon (a.k.a dog) for our baseline model.  
+We considered the models developed by Alexandre Barachant (a.k.a cat) and Rafal Cycon (a.k.a dog) for our baseline model (Cat \& Dot solution)\cite{website:cat_dog_solution}.  
 The solution by Cat and Dog won the first prize in the challenge and it makes logical sense to use that as our baseline.   
 The cat and dog solution has three levels of models.
-The first level of models use 
+
+
+The first level of models uses 
+
 \begin{enumerate}
+  \item Covariance Matrices
+  \item Event Related Potentials (ERP)
+  \item Filter Banks
 \end{enumerate}
+
+The solution uses an ensemble of multiple learning models such as Logistic Regression with LDA, Convolutional Neural Network, and Recurrent Neural Networks.  
+This model fits our requirement to be a baseline and hence we choose the Level-1 model of \textit{Cat and dog solution} as our baseline models.
+We decided to compare the performance of the baselilne with respect to our own model.
+The accuracy achieved by the Level-1 models are not readily available.  So we tried to run the baseline to get the accuracy values.
+
+\subsection{Running the baseline}
+The hardware specs listed in the \textit{Cat and Dog solution} page details the hardware used and the time taken for the entire pipeline.  
+Considering that we are using only the Level-1 models as our baseline, we decided to try running the baseline to get a accurate idea of time and performance for Level-1 alone.
+
+\subsubsection{Attempt 1}
+We first attempted to run the Level-1 models in our own machines just to get an idea of how much memory and time requirements the Level-1 took.
+We started out by installing all the packages specified in the requirements document and then started with the preprocessing step.
+The preprocessing step ran successfully even in our local machine and created two numpy binary files \textit{infos\_val.npy} and \textit{infos\_test.npy}.
+The numpy files are to be consumed by the baseline files for building the models.
+
+
+We ran the baseline using \textit{lvl1/genAll.sh} in our local.  The baseline crashed due to out of memory.  Thus we decided to run all our experiments in New York University (NYU)'s High Performance Computing (HPC) clusters\cite{website:nyuhpc}.
+
+
+\subsubsection{Attempt 2}
+The second attempt\cite{website:attempt_2} involved trying to run the Level-1 code using NYU HPC clusters.
+\begin{enumerate}
+  \item As used in the first attempt, we decided to treat the baseline as a blackbox and try to run the baseline code.
+  \item We identified out the entry point for the baseline models and decided to run the model in NYU HPC clusters.
+  \item We figured out the modules required to make all the python packages used in the baseline to work and loaded the modules.
+  \item We submitted a HPC job for running the baseline.  The job requested for the exact number of CPU nodes, CPU cores, GPU resource and RAM mentioned in the Hardware specs. 
+\end{enumerate}
+
+The second attempt to run the baseline also ended without success as the system crased due to mismatch between required packages and the available packages in HPC\@.
+
+\subsubsection{Attempt 3}
+Since running the baseline on HPC crashed and running the models on our local resulted in `out of memory' error, we decided to run the baseline in our local using a fraction of the sample.
+
+\begin{enumerate}
+  \item We started out by trimming the input files from 18 series of GAL to just 6 series of GAL per subject.
+  \item This corresponds to just \~4000 lines of samples per input file and we were able to load the data in our local effectively.
+  \item We installed the exact version (including the minor versions) of almost all the packages specified in the baseline.
+  \item A few packages that were mentioned in the baseline were not available due to some mysterious reason and we had to install the previous version for these packages.
+  \item We ran the baseline with the subsample of the original dataset.
+\end{enumerate}
+
+We still ran into a number of issues while running the code.  Our guess is that the code in the \textit{Cat and Dog Solution}'s repository has got some breaking changes after the final submission.  We emailed the authors regarding the issue and even after help from the authors we were unable to get the baseline running.
+
+\subsection{Baseline Results}
+As discussed above, since we couldn't get the baseline running even after 3 attempts and the help of the authors and since we had spent more than 2 weeks on this problem, we decided to move ahead with building our own solution to this interesting problem.
+
+
+The attempt to run the baseline gave us significant insights into the Domain, data and assumptions that can be used for solving the problem.
+
 
 \newpage
 
